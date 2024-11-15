@@ -23,7 +23,13 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
-
+  <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function(){
+      emailjs.init("0AIUsL8hUwgJaFxgL");
+    })();
+  </script>
+  
 </head>
 
 <body class="contact-page">
@@ -102,7 +108,7 @@
 
                 <!-- Formulaire de Contact -->
                 <div class="col-lg-7">
-                  <form action="send-message.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+                  <form class="php-email-form" method="post">
                         <div class="row gy-4">
                             <div class="col-md-6">
                                 <label for="name-field" class="pb-2">Votre Nom</label>
@@ -171,7 +177,29 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
-
+  <script>
+    document.querySelector('.php-email-form').addEventListener('submit', function(event) {
+      event.preventDefault(); // Empêche le rechargement de la page
+  
+      // Récupère les informations du formulaire
+      const serviceID = "service_ot9i3us";
+      const templateID = "template_u6e5gwn";
+  
+      emailjs.sendForm(serviceID, templateID, this)
+        .then(function() {
+          // Affiche un message de succès
+          document.querySelector('.sent-message').style.display = 'block';
+          // Masque les messages de chargement et d'erreur
+          document.querySelector('.loading').style.display = 'none';
+          document.querySelector('.error-message').style.display = 'none';
+        }, function(error) {
+          // Affiche un message d'erreur
+          document.querySelector('.error-message').style.display = 'block';
+          console.error("Erreur lors de l'envoi de l'email : ", error);
+        });
+    });
+  </script>
+  
 </body>
 
 </html>
