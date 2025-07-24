@@ -1742,5 +1742,23 @@ section,
 
 .desc{
   font-size: 20px !important;
+  max-width: 590px !important;
+  margin-bottom: 120px !important;
   
+}
+#hero .profile-picture.hero-photo {
+  margin-top: -200px !important;
+  margin-bottom: -200px!important;
+  width: 400px !important;
+  height: 400px !important;
+}
+.qr-code{
+  margin-left: 200px !important;
+}
+.propos{
+  margin-left: 160px !important;
+}
+.sitename{
+  margin-left: -70px !important;
+  margin-right: 40px !important;
 }
