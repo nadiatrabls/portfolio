@@ -6,14 +6,118 @@
   --nav-font: "Poppins",  sans-serif;
 }
 
-/* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
-:root { 
-  --background-color: #ffffff; /* Background color for the entire website, including individual sections */
-  --default-color: #444444; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #222222; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #3462b7; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
-  --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
-  --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+/* === Palette pastel violette personnalisée === */
+:root {
+  --violet-pastel: #b39ddb;
+  --lavande: #e1bee7;
+  --blanc-casse: #f8f6fc;
+  --gris-doux: #d1c4e9;
+  --violet-fonce: #7e57c2;
+  --violet-text: #7e57c2;
+  --accent-color: #b39ddb;
+  --background-color: #f8f6fc;
+  --surface-color: #e1bee7;
+  --heading-color: #7e57c2;
+  --default-color: #444444;
+}
+
+/* === Classes utilitaires pour le nouveau design === */
+.violet-bg {
+  background: var(--background-color) !important;
+}
+.pastel-header {
+  background: var(--lavande);
+  box-shadow: 0 2px 12px #b39ddb22;
+}
+.pastel-hero-bg {
+  background: linear-gradient(135deg, var(--lavande) 0%, var(--violet-pastel) 100%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.violet-text {
+  color: var(--violet-text) !important;
+}
+.btn-violet {
+  background: var(--violet-pastel);
+  color: var(--violet-fonce);
+  border: none;
+  border-radius: 24px;
+  padding: 0.75rem 2rem;
+  font-weight: 600;
+  box-shadow: 0 2px 8px #b39ddb33;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+.btn-violet:hover, .btn-violet:focus {
+  background: var(--violet-fonce);
+  color: #fff;
+  box-shadow: 0 4px 16px #7e57c255;
+}
+.pastel-footer {
+  background: var(--violet-fonce);
+  color: #fff;
+}
+.pastel-footer .violet-text {
+  color: #e1bee7 !important;
+}
+.pastel-footer .social-link {
+  color: #e1bee7;
+  font-size: 1.5rem;
+  margin: 0 0.5rem;
+  transition: color 0.2s;
+}
+.pastel-footer .social-link:hover {
+  color: #fff;
+}
+.header-social-links .social-link {
+  color: var(--violet-fonce);
+  font-size: 1.3rem;
+  margin: 0 0.3rem;
+  transition: color 0.2s;
+}
+.header-social-links .social-link:hover {
+  color: var(--violet-pastel);
+}
+/* Hero section image et QR code */
+.profile-picture {
+  border: 6px solid var(--lavande);
+  box-shadow: 0 4px 24px #b39ddb33;
+}
+.qr-code-img {
+  border-radius: 16px;
+  box-shadow: 0 2px 12px #b39ddb55;
+}
+/* Titres */
+h2, .fw-bold {
+  color: var(--violet-text);
+  font-family: var(--heading-font);
+}
+/* Menu */
+.navmenu ul li a {
+  color: var(--violet-fonce) !important;
+  font-family: var(--nav-font);
+  font-weight: 500;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  transition: background 0.2s, color 0.2s;
+}
+.navmenu ul li a.active, .navmenu ul li a:hover {
+  background: var(--violet-pastel);
+  color: #fff !important;
+}
+/* Responsive ajustements */
+@media (max-width: 768px) {
+  .pastel-header, .pastel-hero-bg {
+    padding: 1rem 0;
+  }
+  .profile-picture {
+    width: 120px !important;
+    height: 120px !important;
+  }
+  .qr-code-img {
+    width: 80px !important;
+  }
 }
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
@@ -138,7 +242,7 @@ h6 {
   justify-content: center;
   flex-direction: column;
   height: 100vh;
-  background-image: url('assets/img/bg.jpg');
+
   background-size: cover;
   background-position: center;
   text-align: center;
@@ -1390,5 +1494,195 @@ section,
 
 .contact .php-email-form button[type=submit]:hover {
   background: color-mix(in srgb, var(--accent-color), transparent 25%);
+}
+
+/* HERO SECTION 2 COLONNES */
+#hero .row {
+  min-height: 60vh;
+}
+#hero .fw-bold {
+  font-size: 2.7rem;
+  letter-spacing: 1px;
+}
+#hero .hero-desc {
+  font-size: 1rem;
+  max-width: 420px;
+  margin-bottom: 1.5rem;
+}
+#hero .profile-picture.hero-photo {
+  width: 240px !important;
+  height: 240px !important;
+  border-width: 8px;
+}
+/* HEADER RESPONSIVE */
+@media (max-width: 991.98px) {
+  .header .container {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 0.5rem;
+  }
+  .header .logo {
+    margin-bottom: 0.5rem;
+  }
+  .header .header-social-links {
+    margin-top: 0.5rem;
+    justify-content: flex-start;
+  }
+  .navmenu ul {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 0.5rem !important;
+    width: 100%;
+    padding-left: 0;
+  }
+  .navmenu {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+}
+
+/* HERO RESPONSIVE AMÉLIORÉ */
+@media (max-width: 991.98px) {
+  #hero .row {
+    flex-direction: column-reverse !important;
+    text-align: center !important;
+    min-height: unset;
+  }
+  #hero .col-md-7, #hero .col-md-5 {
+    width: 100%;
+    max-width: 100%;
+  }
+  #hero .profile-picture.hero-photo {
+    margin: 0 auto 1.5rem auto !important;
+    display: block;
+  }
+}
+@media (max-width: 575.98px) {
+  .header .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  #hero .fw-bold {
+    font-size: 1.1rem;
+  }
+  #hero .hero-desc {
+    font-size: 0.92rem;
+  }
+  #hero .profile-picture.hero-photo {
+    width: 120px !important;
+    height: 120px !important;
+  }
+  .btn-violet {
+    font-size: 0.95rem;
+    padding: 0.5rem 1.2rem;
+  }
+}
+
+/* MENU BURGER MOBILE */
+.mobile-nav-toggle {
+  display: none;
+}
+@media (max-width: 991.98px) {
+  .navmenu ul {
+    display: none !important;
+  }
+  .mobile-nav-toggle {
+    display: block !important;
+    z-index: 1201;
+  }
+  body.mobile-nav-active .navmenu ul {
+    display: flex !important;
+    flex-direction: column;
+    position: fixed;
+    top: 70px;
+    left: 0;
+    width: 100vw;
+    background: var(--lavande);
+    box-shadow: 0 8px 32px #b39ddb55;
+    padding: 2rem 0 2rem 0;
+    gap: 1.5rem;
+    align-items: center;
+    z-index: 1200;
+    animation: slideDown 0.3s;
+  }
+  @keyframes slideDown {
+    from { transform: translateY(-40px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+  body.mobile-nav-active .mobile-nav-toggle i {
+    content: "";
+    font-family: "bootstrap-icons";
+  }
+  body.mobile-nav-active .mobile-nav-toggle .bi-list {
+    display: none;
+  }
+  body.mobile-nav-active .mobile-nav-toggle:before {
+    content: "\f62a";
+    font-family: "bootstrap-icons";
+    font-size: 2rem;
+    color: var(--violet-fonce);
+  }
+}
+
+/* HEADER MOBILE AMÉLIORÉ */
+@media (max-width: 991.98px) {
+  .header .container {
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    gap: 0;
+  }
+  .header .logo {
+    margin: 0;
+    flex: 0 0 auto;
+    justify-content: flex-start;
+  }
+  .header .sitename {
+    text-align: left;
+    width: auto;
+    font-size: 2rem;
+    padding-left: 0;
+  }
+  .header-social-links.d-md-flex {
+    display: none !important;
+  }
+  .header-social-links.d-md-none {
+    display: flex !important;
+    margin-top: 0.5rem;
+  }
+  .mobile-nav-toggle {
+    display: block !important;
+    position: static;
+    margin-left: auto;
+  }
+}
+
+/* HERO PHOTO TOUJOURS VISIBLE */
+#hero .profile-picture.hero-photo {
+  display: block !important;
+}
+#hero .profile-picture.hero-photo {
+  margin-top: 0.5rem !important;
+  margin-bottom: 0.5rem !important;
+}
+@media (max-width: 991.98px) {
+  #hero .profile-picture.hero-photo {
+    margin-top: -100px !important;
+    margin-bottom: -200px!important;
+    width: 200px !important;
+    height: 200px !important;
+  }
+}
+
+#hero .col-md-7 .d-flex.flex-column {
+  align-items: center !important;
+}
+@media (min-width: 768px) {
+  #hero .col-md-7 .d-flex.flex-column {
+    align-items: flex-start !important;
+  }
+}
+#hero .qr-code {
+  margin-top: 0 !important;
 }
 
