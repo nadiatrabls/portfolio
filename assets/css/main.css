@@ -620,6 +620,8 @@ p {
   font-size: 14px;
   padding: 40px 0;
   position: relative;
+  box-shadow: 0 -8px 32px #b39ddb33, 0 -1px 8px #7e57c222;
+  z-index: 10;
 }
 
 .footer .copyright p {
@@ -1015,7 +1017,66 @@ section,
   margin-top: -150px !important;
 }
 
-
+.skill-card {
+  background: rgba(227, 210, 255, 0.25);
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 24px #b39ddb22;
+  padding: 1.2rem 1.5rem 1.1rem 1.5rem;
+  margin-bottom: 1.2rem;
+  transition: box-shadow 0.18s, transform 0.18s;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.skill-card:hover {
+  box-shadow: 0 12px 32px #b39ddb55;
+  transform: translateY(-4px) scale(1.03);
+}
+.skill-label {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 0.7rem;
+  color: #7e57c2;
+}
+.skill-val {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #7e57c2;
+  margin-left: 1rem;
+}
+.progress-bar-modern {
+  width: 100%;
+  height: 18px;
+  background: rgba(179, 157, 219, 0.18);
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+}
+.progress-bar-fill {
+  height: 100%;
+  border-radius: 12px;
+  background: linear-gradient(90deg, #b39ddb 0%, #e1bee7 100%);
+  box-shadow: 0 2px 8px #b39ddb33;
+  transition: width 1.2s cubic-bezier(.4,2,.6,1);
+}
+@media (max-width: 991.98px) {
+  .skill-card {
+    padding: 1rem 0.7rem 0.9rem 0.7rem;
+    margin-bottom: 1rem;
+  }
+  .skill-label {
+    font-size: 1rem;
+  }
+  .skill-val {
+    font-size: 1rem;
+  }
+  .progress-bar-modern {
+    height: 14px;
+  }
+}
 
 
 /*--------------------------------------------------------------
@@ -1655,6 +1716,72 @@ section,
     position: static;
     margin-left: auto;
   }
+  /* Hero/About section */
+  #about .row.align-items-center, #hero .row {
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+  #about .col-lg-4, #about .col-lg-8, #hero .col-md-5, #hero .col-md-7 {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 !important;
+    margin: 0 !important;
+    text-align: center !important;
+    align-items: center !important;
+  }
+  #about .profile-picture, #hero .profile-picture.hero-photo {
+    margin: 0 auto 1.5rem auto !important;
+    width: 180px !important;
+    height: 180px !important;
+  }
+  #about .about-badges-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.7rem;
+    margin-top: 1.2rem;
+    padding: 0 0.5rem;
+  }
+  #about .about-badge {
+    width: 100%;
+    justify-content: center;
+    font-size: 0.98rem;
+    padding: 0.5rem 0.8rem;
+  }
+  .skill-card {
+    padding: 1rem 0.7rem 0.9rem 0.7rem;
+    margin-bottom: 1rem;
+  }
+  .skill-label {
+    font-size: 1rem;
+  }
+  .skill-val {
+    font-size: 1rem;
+  }
+  .progress-bar-modern {
+    height: 14px;
+  }
+}
+@media (max-width: 575.98px) {
+  .header .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .footer {
+    padding: 20px 0 !important;
+    text-align: center !important;
+  }
+  .footer .social-links {
+    justify-content: center !important;
+    gap: 1rem !important;
+  }
+  .footer .copyright {
+    font-size: 1rem !important;
+  }
+  .tt {
+    font-size: 1.3rem !important;
+    margin-top: 20px !important;
+    margin-bottom: 40px !important;
+  }
 }
 
 /* HERO PHOTO TOUJOURS VISIBLE */
@@ -1746,6 +1873,23 @@ section,
   margin-bottom: 120px !important;
   
 }
+#about .lead {
+  text-align: justify;
+}
+@media (max-width: 575.98px) {
+  #about .lead {
+    text-align: center !important;
+    padding-left: 17px;
+    padding-right: 17px;
+    font-size: 17px !important;
+    text-align:center !important;
+  }
+  .mp{
+    margin-top: 50px !important;
+    margin-bottom: 50px !important;
+  }
+}
+
 #hero .profile-picture.hero-photo {
   margin-top: -200px !important;
   margin-bottom: -200px!important;
@@ -1915,4 +2059,125 @@ section,
 }
 .bgv{
   height: 800px !important;
+}
+
+.skills-circles {
+  margin-top: 2.5rem;
+}
+.skill-circle {
+  position: relative;
+  width: 120px;
+  height: 140px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background: none;
+  transition: transform 0.18s, box-shadow 0.18s;
+}
+.skill-circle:hover {
+  transform: translateY(-6px) scale(1.06);
+  box-shadow: 0 8px 32px #b39ddb44;
+}
+.circle-svg {
+  width: 110px;
+  height: 110px;
+  display: block;
+}
+.circle-bg {
+  fill: none;
+  stroke: #e1bee7;
+  stroke-width: 12;
+  opacity: 0.5;
+}
+.circle-bar {
+  fill: none;
+  stroke: url(#circle-gradient);
+  stroke-width: 12;
+  stroke-linecap: round;
+  stroke-dasharray: 302;
+  stroke-dashoffset: 0;
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%;
+  transition: stroke-dashoffset 1.2s cubic-bezier(.4,2,.6,1);
+  stroke: #b39ddb;
+}
+.circle-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 110px;
+  height: 110px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+.circle-val {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #7e57c2;
+  margin-bottom: 0.2rem;
+}
+.circle-label {
+  font-size: 1rem;
+  color: #7e57c2;
+  font-weight: 500;
+  margin-top: 0.7rem;
+  pointer-events: auto;
+}
+@media (max-width: 991.98px) {
+  .skill-circle {
+    width: 100px;
+    height: 120px;
+  }
+  .circle-svg, .circle-content {
+    width: 90px;
+    height: 90px;
+  }
+  .circle-val {
+    font-size: 1.1rem;
+  }
+  .circle-label {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .btn-cv-3d {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1.5rem auto 1.5rem auto !important;
+    min-width: 70vw;
+    font-size: 1.1rem;
+    padding: 0.8rem 1.2rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  #about .profile-picture {
+    width: 200px !important;
+    height: 200px !important;
+    margin: 120px auto -20px auto !important;
+    display: block;
+  }
+}
+.mp{
+  margin-top: -50px !important;
+  margin-bottom: 70px !important;
+  font-size: 40px !important;
+  margin-left: 10%;
+}
+@media (max-width: 575.98px) {
+  
+  .mp{
+    margin-top: -120px !important;
+    margin-bottom: 60px !important;
+    margin-left: 0;
+  }
+  .bgv{
+    height: 1050px !important;
+  }
 }
