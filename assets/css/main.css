@@ -2480,3 +2480,13 @@ section,
   margin-bottom: 2.5rem !important;
 }
 
+.portfolio-description {
+  margin-top: 50px !important;
+  padding: 2rem !important;
+  text-align: justify;
+  
+}
+.obj{
+  margin-top: 20px !important;
+}
+
