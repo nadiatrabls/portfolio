@@ -2489,4 +2489,8 @@ section,
 .obj{
   margin-top: 20px !important;
 }
-
+.petitpas-img{
+   height: 650px !important;
+   width: 325px !important;
+   margin-left: 240px !important;
+}
