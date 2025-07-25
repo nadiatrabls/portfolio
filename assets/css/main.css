@@ -2127,22 +2127,7 @@ section,
   margin-top: 0.7rem;
   pointer-events: auto;
 }
-@media (max-width: 991.98px) {
-  .skill-circle {
-    width: 100px;
-    height: 120px;
-  }
-  .circle-svg, .circle-content {
-    width: 90px;
-    height: 90px;
-  }
-  .circle-val {
-    font-size: 1.1rem;
-  }
-  .circle-label {
-    font-size: 0.95rem;
-  }
-}
+
 
 @media (max-width: 575.98px) {
   .btn-cv-3d {
@@ -2250,3 +2235,94 @@ section,
     margin-left: 120px !important;
   }
 }
+
+.timeline-edu {
+  position: relative;
+  margin: 3rem 0 3rem 0;
+  padding-left: 40px;
+  border-left: 4px solid #b39ddb44;
+}
+.timeline-item {
+  position: relative;
+  margin-bottom: 3.5rem;
+  display: flex;
+  align-items: flex-start;
+}
+.timeline-icon {
+  position: absolute;
+  left: -54px;
+  top: 0;
+  width: 48px;
+  height: 48px;
+  background: linear-gradient(135deg, #b39ddb 60%, #e1bee7 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 1.7rem;
+  box-shadow: 0 2px 12px #b39ddb33;
+  z-index: 2;
+  border: 4px solid #f8f6fc;
+}
+.timeline-content {
+  background: rgba(227, 210, 255, 0.18);
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 24px #b39ddb22;
+  padding: 1.2rem 1.5rem 1.1rem 1.5rem;
+  margin-left: 0.5rem;
+  width: 100%;
+  transition: box-shadow 0.18s, transform 0.18s;
+}
+.timeline-content:hover {
+  box-shadow: 0 12px 32px #b39ddb55;
+  transform: translateY(-4px) scale(1.03);
+}
+.timeline-date {
+  display: inline-block;
+  font-size: 1.05rem;
+  color: #7e57c2;
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+  margin-right: 1rem;
+}
+.timeline-school {
+  font-size: 1rem;
+  color: #b39ddb;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+.card-pastel h4 {
+  color: #7e57c2;
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+}
+@media (max-width: 991.98px) {
+  .timeline-edu {
+    padding-left: 0;
+    border-left: none;
+  }
+  .timeline-item {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2.5rem;
+  }
+  .timeline-icon {
+    position: static;
+    margin-bottom: 0.7rem;
+    left: unset;
+    top: unset;
+  }
+  .timeline-content {
+    margin-left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 1.1rem 0.7rem 1rem 0.7rem;
+  }
+}
+
+.experiences .section-title {
+  margin-top: -100px!important;
+}
+

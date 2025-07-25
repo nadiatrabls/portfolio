@@ -38,123 +38,119 @@
 
 <body class="resume-page">
 
-  <header id="header" class="header d-flex align-items-center light-background sticky-top">
-    <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
-
-      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
-        
-        <h1 class="sitename">devfolio</h1>
+  <header id="header" class="header pastel-header sticky-top py-3">
+    <div class="container d-flex align-items-center justify-content-between flex-wrap">
+      <a href="index.html" class="logo d-flex align-items-center order-1">
+        <h1 class="sitename mb-0 text-start">NADIA TRABELSI</h1>
       </a>
-
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="index.html" >Accueil</a></li>
-          <li><a href="about.html">A propos</a></li>
-          <li><a href="education.html" class="active">Education</a></li>
+      <button class="mobile-nav-toggle d-block d-md-none order-2 ms-auto" aria-label="Ouvrir le menu" style="background:none;border:none;font-size:2rem;line-height:1;cursor:pointer;">
+        <i class="bi bi-list"></i>
+      </button>
+      <nav id="navmenu" class="navmenu order-3 order-md-2">
+        <ul class="d-flex gap-3 mb-0">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="about.html">À propos</a></li>
+          <li><a href="education.html" class="active">Éducation</a></li>
           <li><a href="experiences.html">Expériences</a></li>
           <li><a href="portfolio.html">Portfolio</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
-
-      <div class="header-social-links">
-        <a href="https://www.linkedin.com/in/nadia-trabelsi1/" class="linkedin" target="_blank"><i class="bi bi-linkedin"></i></a>
-        <a href="https://github.com/nadiatrabls" target="_blank" class="linkedin"><i class="bi bi-github"></i></a>
+      <div class="header-social-links d-none d-md-flex gap-2 order-4 ms-md-auto">
+        <a href="https://www.linkedin.com/in/nadia-trabelsi1/" target="_blank" class="social-link"><i class="bi bi-linkedin"></i></a>
+        <a href="https://github.com/nadiatrabls" target="_blank" class="social-link"><i class="bi bi-github"></i></a>
       </div>
-
+    </div>
+    <div class="header-social-links d-flex d-md-none justify-content-center gap-2 mt-2">
+      <a href="https://www.linkedin.com/in/nadia-trabelsi1/" target="_blank" class="social-link"><i class="bi bi-linkedin"></i></a>
+      <a href="https://github.com/nadiatrabls" target="_blank" class="social-link"><i class="bi bi-github"></i></a>
     </div>
   </header>
 
 
-  <main class="main ">
-    <!-- Resume Section -->
+  <main class="main">
+    <!-- Timeline Éducation moderne -->
     <section id="resume" class="resume section education">
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Éducation</h2>
-        <p>Mon parcours académique en génie civil et développement web</p>
-      </div><!-- End Section Title -->
-
+        <h2>Mon parcours éducatif</h2>
+      </div>
       <div class="container">
-        <div class="row">
-          <div class="col-lg-10 offset-lg-1" data-aos="fade-up" data-aos-delay="100">
-
-            <!-- Formation en Conception et Développement d'Applications -->
-<div class="resume-item">
-  <h4>Formation Conceptrice Développeuse d'Applications RNCP 7</h4>
-  <h5>En cours</h5>
-  <p><em>Greta de Lognes</em></p>
-  <p>Actuellement en formation, j'approfondis mes compétences en conception et développement d'applications. Cette formation couvre des domaines tels que l'analyse des besoins, la conception d'architectures logicielles, le développement full-stack, ainsi que la gestion de projets techniques en environnement agile. J'apprends également à travailler avec des technologies avancées comme Java, Spring Boot, Angular, et les bases de données relationnelles et NoSQL.</p>
-  <p>L'objectif est de concevoir des solutions logicielles robustes, performantes, et adaptées aux besoins des utilisateurs, tout en maîtrisant l'ensemble du cycle de vie des applications.</p>
-</div> 
-
-            <!-- Formation en Développement Web et Web Mobile -->
-<div class="resume-item">
-  <h4>Formation Développeur Web et Web Mobile RNCP 5</h4>
-  <h5>2024</h5>
-  <p><em>ALTRH Consulting</em></p>
-  <p>Cette formation intensive couvre l'ensemble des compétences nécessaires pour devenir développeuse web et mobile. Elle inclut l'apprentissage approfondi de technologies front-end et back-end comme HTML, CSS, JavaScript, PHP, Symfony, et React.js. L'objectif est de maîtriser le développement de sites web interactifs, la création d'applications dynamiques, et l'intégration des meilleures pratiques en matière de sécurité.</p>
-  <p><strong>Validation :</strong> Formation validée avec succès, accompagnée d'une appréciation positive du jury pour la qualité du travail et des compétences acquises.</p>
-</div>
-
-
-            <!-- Cycle Ingénieur en Génie Civil -->
-            <div class="resume-item">
+        <div class="timeline-edu">
+          <!-- Formation CDA -->
+          <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+            <div class="timeline-icon"><i class="bi bi-laptop"></i></div>
+            <div class="timeline-content card-pastel">
+              <h4>Formation Conceptrice Développeuse d'Applications RNCP 7</h4>
+              <span class="timeline-date">2024 - 2025</span>
+              <div class="timeline-school">Greta de Lognes</div>
+              <p>En cours de cette formation, j'ai approfondis mes compétences en conception et développement d'applications. Elle couvre plusieurs domaines tels que l'analyse des besoins, la conception d'architectures logicielles, le développement full-stack, ainsi que la gestion de projets techniques en environnement agile. J'ai appris également à travailler avec des technologies avancées comme Java, JEE, Android et les bases de données relationnelles et NoSQL.</p>
+            </div>
+          </div>
+          <!-- Formation Web Mobile -->
+          <div class="timeline-item" data-aos="fade-up" data-aos-delay="120">
+            <div class="timeline-icon"><i class="bi bi-phone"></i></div>
+            <div class="timeline-content card-pastel">
+              <h4>Formation Développeur Web et Web Mobile RNCP 5</h4>
+              <span class="timeline-date">2024</span>
+              <div class="timeline-school">ALTRH Consulting</div>
+              <p>Cette formation intensive couvre l'ensemble des compétences nécessaires pour devenir développeuse web et mobile. Elle inclut l'apprentissage approfondi de technologies front-end et back-end comme HTML, CSS, JavaScript, PHP, Symfony, et React.js. L'objectif est de maîtriser le développement de sites web interactifs, la création d'applications dynamiques, et l'intégration des meilleures pratiques en matière de sécurité.</p>
+            </div>
+          </div>
+          <!-- Cycle Ingénieur Génie Civil -->
+          <div class="timeline-item" data-aos="fade-up" data-aos-delay="140">
+            <div class="timeline-icon"><i class="bi bi-building"></i></div>
+            <div class="timeline-content card-pastel">
               <h4>Cycle Ingénieur Génie Civil</h4>
-              <h5>2018 - 2021</h5>
-              <p><em>École Chez Soi (Skill And You)</em></p>
+              <span class="timeline-date">2018 - 2021</span>
+              <div class="timeline-school">École Chez Soi (Skill And You)</div>
               <p>Un cursus rigoureux dans le domaine du génie civil, axé sur la conception et la gestion de projets de construction. Ce programme inclut l'étude de la mécanique des structures, des matériaux de construction, des fondations, ainsi que la planification de chantiers. Cette formation m'a permis de développer des compétences en analyse structurelle, en gestion de projet et en techniques de construction modernes, essentielles pour la réussite dans l'industrie du bâtiment.</p>
             </div>
-
-            <!-- 1ère Année Cycle Ingénieur en Génie Civil -->
-            <div class="resume-item">
+          </div>
+          <!-- 1ère Année Ingénieur Génie Civil -->
+          <div class="timeline-item" data-aos="fade-up" data-aos-delay="160">
+            <div class="timeline-icon"><i class="bi bi-geo"></i></div>
+            <div class="timeline-content card-pastel">
               <h4>1ère Année Cycle Ingénieur en Génie Civil</h4>
-              <h5>2017 - 2018</h5>
-              <p><em>École Polytechnique de Sousse</em></p>
+              <span class="timeline-date">2017 - 2018</span>
+              <div class="timeline-school">École Polytechnique de Sousse</div>
               <p>Première année du cycle ingénieur en génie civil, où j'ai acquis des connaissances fondamentales en ingénierie civile, notamment en topographie, en résistance des matériaux, et en calculs structuraux. Cette année a renforcé mes bases en mathématiques appliquées au génie civil et m'a préparée à des études plus poussées dans le domaine.</p>
             </div>
-
-            <!-- Cycle Préparatoire Math-Physique -->
-            <div class="resume-item">
+          </div>
+          <!-- Prépa Math-Physique -->
+          <div class="timeline-item" data-aos="fade-up" data-aos-delay="180">
+            <div class="timeline-icon"><i class="bi bi-calculator"></i></div>
+            <div class="timeline-content card-pastel">
               <h4>Cycle Préparatoire Math-Physique</h4>
-              <h5>2015 - 2017</h5>
-              <p><em>École Polytechnique de Sousse</em></p>
+              <span class="timeline-date">2015 - 2017</span>
+              <div class="timeline-school">École Polytechnique de Sousse</div>
               <p>Programme de formation intensif en mathématiques et physique, conçu pour préparer les étudiants aux études d'ingénieur. J'ai suivi des cours approfondis en calcul différentiel, en algèbre, en mécanique et en thermodynamique. Ce cycle préparatoire inclut également une initiation aux langages de programmation comme Python et C++, qui ont renforcé mes capacités en résolution de problèmes et en logique de programmation.</p>
             </div>
-
-            <!-- Baccalauréat en Sciences Techniques -->
-            <div class="resume-item">
+          </div>
+          <!-- Bac Sciences Techniques -->
+          <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+            <div class="timeline-icon"><i class="bi bi-award"></i></div>
+            <div class="timeline-content card-pastel">
               <h4>Baccalauréat en Sciences Techniques</h4>
-              <h5>2015</h5>
-              <p><em>Lycée secondaire de Sayada</em></p>
+              <span class="timeline-date">2015</span>
+              <div class="timeline-school">Lycée secondaire de Sayada</div>
               <p>Diplôme obtenu avec une spécialisation en sciences techniques, offrant une solide formation en mathématiques, physique et sciences appliquées. Ce parcours m'a permis de développer une forte capacité d'analyse et une compréhension des principes scientifiques fondamentaux, qui sont essentiels dans le domaine de l'ingénierie et du développement technique.</p>
             </div>
-
           </div>
         </div>
       </div>
-    </section><!-- /Resume Section -->
-</main>
+    </section>
+  </main>
 
 
-  <footer id="footer" class="footer light-background">
-
-    <div class="container">
-      <div class="copyright text-center ">
-        <p> <span>Nadia Trabelsi</span></p>
-      </div>
-      <div class="social-links d-flex justify-content-center">
-        
-        
-      
-        <a href="https://www.linkedin.com/in/nadia-trabelsi1/" target="_blank"><i class="bi bi-linkedin"></i></a>
-        <a href="https://github.com/nadiatrabls" target="_blank"><i class="bi bi-github"></i></a>
-      </div>
-      
+<footer id="footer" class="footer pastel-footer py-4">
+  <div class="container text-center">
+    <p class="mb-1 fw-bold violet-text">&copy; Nadia Trabelsi</p>
+    <div class="social-links d-flex justify-content-center gap-3">
+      <a href="https://www.linkedin.com/in/nadia-trabelsi1/" target="_blank" class="social-link"><i class="bi bi-linkedin"></i></a>
+      <a href="https://github.com/nadiatrabls" target="_blank" class="social-link"><i class="bi bi-github"></i></a>
     </div>
-
-  </footer>
+  </div>
+</footer>
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>

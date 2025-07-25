@@ -38,128 +38,138 @@
 
 <body class="resume-page">
 
-  <header id="header" class="header d-flex align-items-center light-background sticky-top">
-    <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
-
-      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
-        
-        <h1 class="sitename">devfolio</h1>
+  <header id="header" class="header pastel-header sticky-top py-3">
+    <div class="container d-flex align-items-center justify-content-between flex-wrap">
+      <a href="index.html" class="logo d-flex align-items-center order-1">
+        <h1 class="sitename mb-0 text-start">NADIA TRABELSI</h1>
       </a>
-
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="index.html" >Accueil</a></li>
-          <li><a href="about.html">A propos</a></li>
-          <li><a href="education.html">Education</a></li>
+      <button class="mobile-nav-toggle d-block d-md-none order-2 ms-auto" aria-label="Ouvrir le menu" style="background:none;border:none;font-size:2rem;line-height:1;cursor:pointer;">
+        <i class="bi bi-list"></i>
+      </button>
+      <nav id="navmenu" class="navmenu order-3 order-md-2">
+        <ul class="d-flex gap-3 mb-0">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="about.html">À propos</a></li>
+          <li><a href="education.html">Éducation</a></li>
           <li><a href="experiences.html" class="active">Expériences</a></li>
           <li><a href="portfolio.html">Portfolio</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
-
-      <div class="header-social-links">
-        <a href="https://www.linkedin.com/in/nadia-trabelsi1/" class="linkedin" target="_blank"><i class="bi bi-linkedin"></i></a>
-        <a href="https://github.com/nadiatrabls" target="_blank" class="linkedin"><i class="bi bi-github"></i></a>
+      <div class="header-social-links d-none d-md-flex gap-2 order-4 ms-md-auto">
+        <a href="https://www.linkedin.com/in/nadia-trabelsi1/" target="_blank" class="social-link"><i class="bi bi-linkedin"></i></a>
+        <a href="https://github.com/nadiatrabls" target="_blank" class="social-link"><i class="bi bi-github"></i></a>
       </div>
-
+    </div>
+    <!-- Réseaux sociaux sous le header sur mobile -->
+    <div class="header-social-links d-flex d-md-none justify-content-center gap-2 mt-2">
+      <a href="https://www.linkedin.com/in/nadia-trabelsi1/" target="_blank" class="social-link"><i class="bi bi-linkedin"></i></a>
+      <a href="https://github.com/nadiatrabls" target="_blank" class="social-link"><i class="bi bi-github"></i></a>
     </div>
   </header>
 
 
   <main class="main">
-    <!-- Experience Section -->
-    <section id="resume" class="resume section education">
-      <!-- Section Title -->
+    <!-- Timeline Expériences moderne -->
+    <section id="resume" class="resume section experiences">
       <div class="container section-title" data-aos="fade-up">
         <h2>Expériences Professionnelles</h2>
         <p>Mon parcours professionnel dans le domaine du développement et de la gestion de projets</p>
-      </div><!-- End Section Title -->
-
+      </div>
       <div class="container">
-        <div class="row">
-          <div class="col-lg-10 offset-lg-1" data-aos="fade-up" data-aos-delay="100">
-
-            <!-- Expérience: Stage Développeur Web Full Stack chez InnovQube -->
-            <div class="resume-item">
-              <h4>Stagiaire Développeuse Web Full Stack</h4>
-              <h5>Août - Octobre 2024</h5>
-              <p><em>InnovQube</em></p>
+        <div class="timeline-edu">
+          <!-- Stage Firstruner -->
+          <div class="timeline-item" data-aos="fade-up" data-aos-delay="90">
+            <div class="timeline-icon"><i class="bi bi-briefcase"></i></div>
+            <div class="timeline-content card-pastel">
+              <h4>Stage Conceptrice Développeuse d’Applications</h4>
+              <span class="timeline-date">Février - Avril 2025</span>
+              <div class="timeline-school">Firstruner</div>
+              <p>Stage en tant que conceptrice développeuse d’applications, participation à la conception, au développement et à l’optimisation de solutions digitales innovantes au sein de l’équipe Firstruner.</p>
+              <ul>
+                <li>Participation à la conception et au développement d’applications web.</li>
+                <li>Collaboration avec l’équipe sur des projets innovants.</li>
+                <li>Optimisation de solutions digitales pour de nouveaux usages.</li>
+              </ul>
+            </div>
+          </div>
+          <!-- Stage InnovQube -->
+          <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+            <div class="timeline-icon"><i class="bi bi-laptop"></i></div>
+            <div class="timeline-content card-pastel">
+              <h4>Stage Développeuse Web Full Stack</h4>
+              <span class="timeline-date">Août - Octobre 2024</span>
+              <div class="timeline-school">InnovQube</div>
               <p>Stage en développement web full stack où j'ai eu l'occasion de participer à la création d'une application de messagerie. Ce projet m'a permis de renforcer mes compétences en développement front-end avec Vue.js et back-end avec Laravel, tout en travaillant sur des fonctionnalités avancées d'interaction utilisateur.</p>
               <ul>
                 <li>Développement d'une application de messagerie en utilisant Laravel pour le back-end et Vue.js pour le front-end.</li>
                 <li>Création de composants Vue pour une interface utilisateur dynamique et réactive.</li>
                 <li>Intégration des fonctionnalités d'affichage en temps réel des messages et de gestion des conversations.</li>
               </ul>
-            </div><!-- End Experience Item -->
-
-            <!-- Expérience: Fondatrice et Gérante de HomeRenov91 -->
-            <div class="resume-item">
+            </div>
+          </div>
+          <!-- HomeRenov91 -->
+          <div class="timeline-item" data-aos="fade-up" data-aos-delay="120">
+            <div class="timeline-icon"><i class="bi bi-house"></i></div>
+            <div class="timeline-content card-pastel">
               <h4>Fondatrice et Gérante</h4>
-              <h5>2023 - Aujourd'hui</h5>
-              <p><em>HomeRenov91</em></p>
+              <span class="timeline-date">2023 - Aujourd'hui</span>
+              <div class="timeline-school">HomeRenov91</div>
               <p>En tant que fondatrice de l'entreprise HomeRenov91, j'ai supervisé le développement d'une plateforme interactive destinée aux utilisateurs et au support client dans le domaine de la rénovation. Ce rôle m'a permis de développer des compétences en gestion d'entreprise, ainsi qu'en coordination et planification de projets de construction.</p>
               <ul>
                 <li>Conception et gestion de la plateforme pour améliorer l'expérience client.</li>
                 <li>Coordination des projets de rénovation avec les équipes sur le terrain.</li>
                 <li>Suivi des indicateurs de performance pour assurer la qualité des services.</li>
               </ul>
-            </div><!-- End Experience Item -->
-
-            <!-- Expérience: Assistante en Gestion de Projet chez EURL Nadej -->
-            <div class="resume-item">
+            </div>
+          </div>
+          <!-- EURL Nadej -->
+          <div class="timeline-item" data-aos="fade-up" data-aos-delay="140">
+            <div class="timeline-icon"><i class="bi bi-clipboard-data"></i></div>
+            <div class="timeline-content card-pastel">
               <h4>Assistante en Gestion de Projet</h4>
-              <h5>2020 - 2023</h5>
-              <p><em>EURL Nadej</em></p>
+              <span class="timeline-date">2020 - 2023</span>
+              <div class="timeline-school">EURL Nadej</div>
               <p>Dans mon rôle d'assistante en gestion de projet, j'étais responsable du suivi des devis, des factures, et de la planification des projets. J'ai acquis une solide expérience dans la gestion de documents administratifs et dans le support aux équipes de projet.</p>
               <ul>
                 <li>Gestion des devis et factures pour divers projets de construction.</li>
                 <li>Assistance dans la planification et la coordination des activités de projet.</li>
                 <li>Interaction avec les clients et les fournisseurs pour assurer la fluidité des opérations.</li>
               </ul>
-            </div><!-- End Experience Item -->
-
-            <!-- Expérience: Stage dans un Chantier de Construction au Ministère de l'Habitat -->
-            <div class="resume-item">
+            </div>
+          </div>
+          <!-- Ministère de l'Habitat -->
+          <div class="timeline-item" data-aos="fade-up" data-aos-delay="160">
+            <div class="timeline-icon"><i class="bi bi-cone-striped"></i></div>
+            <div class="timeline-content card-pastel">
               <h4>Stage dans un Chantier de Construction</h4>
-              <h5>Juin - Août 2018</h5>
-              <p><em>Ministère de l'Habitat</em></p>
+              <span class="timeline-date">Juin - Août 2018</span>
+              <div class="timeline-school">Ministère de l'Habitat</div>
               <p>Ce stage m'a offert l'opportunité de découvrir le monde de la construction de manière pratique. J'ai travaillé avec les équipes sur le terrain pour comprendre les techniques de construction et les processus d'organisation sur un chantier.</p>
               <ul>
                 <li>Observation des techniques de construction et participation aux tâches quotidiennes.</li>
                 <li>Apprentissage des principes de sécurité et des normes de qualité sur le chantier.</li>
                 <li>Collaboration avec des ingénieurs et des ouvriers pour optimiser les processus de travail.</li>
               </ul>
-            </div><!-- End Experience Item -->
-
-            
-
+            </div>
           </div>
         </div>
       </div>
-    </section><!-- /Experience Section -->
-</main>
+    </section>
+  </main>
 
 
 
 
-  <footer id="footer" class="footer light-background">
-
-    <div class="container">
-      <div class="copyright text-center ">
-        <p> <span>Nadia Trabelsi</span></p>
-      </div>
-      <div class="social-links d-flex justify-content-center">
-        
-        
-      
-        <a href="https://www.linkedin.com/in/nadia-trabelsi1/" target="_blank"><i class="bi bi-linkedin"></i></a>
-        <a href="https://github.com/nadiatrabls" target="_blank"><i class="bi bi-github"></i></a>
-      </div>
-      
+<footer id="footer" class="footer pastel-footer py-4">
+  <div class="container text-center">
+    <p class="mb-1 fw-bold violet-text">&copy; Nadia Trabelsi</p>
+    <div class="social-links d-flex justify-content-center gap-3">
+      <a href="https://www.linkedin.com/in/nadia-trabelsi1/" target="_blank" class="social-link"><i class="bi bi-linkedin"></i></a>
+      <a href="https://github.com/nadiatrabls" target="_blank" class="social-link"><i class="bi bi-github"></i></a>
     </div>
-
-  </footer>
+  </div>
+</footer>
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
