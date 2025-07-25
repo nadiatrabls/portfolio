@@ -47,11 +47,11 @@
       </button>
       <nav id="navmenu" class="navmenu order-3 order-md-2">
         <ul class="d-flex gap-3 mb-0">
-          <li><a href="index.html" class="active">Accueil</a></li>
+          <li><a href="index.html">Accueil</a></li>
           <li><a href="about.html">À propos</a></li>
           <li><a href="education.html">Éducation</a></li>
           <li><a href="experiences.html">Expériences</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="portfolio.html" class="active">Portfolio</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
@@ -69,86 +69,105 @@
 
 
   <main class="main">
-    <!-- Portfolio Section -->
+    <!-- Portfolio Section moderne -->
     <section id="portfolio" class="portfolio section">
-
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Portfolio</h2>
         <p>Découvrez quelques projets que j'ai réalisés en développement web et en design</p>
-      </div><!-- End Section Title -->
-
+      </div>
       <div class="container">
-
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-
-          <!-- Portfolio Filters -->
-          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-            <li data-filter="*" class="filter-active">Tous</li>
-            <li data-filter=".filter-web">Sites Web</li>
-            <li data-filter=".filter-app">Applications</li>
-           
-          </ul><!-- End Portfolio Filters -->
-
-          <!-- Portfolio Container -->
-          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-
-            <!-- Portfolio Item: Site Web -->
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
-              <img src="assets/img/portfolio/web-project-1.jpg" class="img-fluid" alt="Projet Site Web 1">
-              <div class="portfolio-info">
+        <!-- Filtres stylés -->
+        <div class="portfolio-filters-modern d-flex justify-content-center mb-4" data-aos="fade-up" data-aos-delay="100">
+          <button class="filter-btn active" data-filter="*">Tous</button>
+          <button class="filter-btn" data-filter=".filter-web">Sites Web</button>
+          <button class="filter-btn" data-filter=".filter-app">Applications</button>
+        </div>
+        <!-- Grille de projets -->
+        <div class="row portfolio-grid gy-4" data-aos="fade-up" data-aos-delay="200">
+          <!-- Projet 1 -->
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-card">
+              <div class="portfolio-img-wrap">
+                <img src="assets/img/portfolio/web-project-1.jpg" class="img-fluid" alt="Projet Site Web 1">
+              </div>
+              <div class="portfolio-card-body">
                 <h4>Site Web HomeRenov91</h4>
                 <p>Développement d'un site interactif pour une entreprise de batiment</p>
-                <a href="assets/img/portfolio/web-project-1.jpg" title="Aperçu Site Web Homerenov91" data-gallery="portfolio-gallery-web" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="homerenov91.html" title="Plus de détails" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                <div class="portfolio-card-actions">
+                  <a href="assets/img/portfolio/web-project-1.jpg" title="Aperçu Site Web Homerenov91" data-gallery="portfolio-gallery-web" class="glightbox preview-link"><i class="bi bi-zoom-in"></i> Aperçu</a>
+                  <a href="homerenov91.html" title="Plus de détails" class="details-link"><i class="bi bi-link-45deg"></i> Détails</a>
+                </div>
               </div>
-            </div><!-- End Portfolio Item -->
-
-            <!-- Portfolio Item: Application -->
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/portfolio/agence1.jpg" class="img-fluid" alt="Projet Application 1">
-              <div class="portfolio-info">
-                <h4>Agence Immobiliére</h4>
-                <p>Développement d'un site interactif pour une agence immobiliére</p>
-                <a href="assets/img/portfolio/app-project-1.jpg" title="Aperçu site agence innobiliére" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="agenceimmo.html" title="Plus de détails" class="details-link"><i class="bi bi-link-45deg"></i></a>
+            </div>
+          </div>
+          <!-- Projet 2 -->
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-card">
+              <div class="portfolio-img-wrap">
+                <img src="assets/img/portfolio/agence1.jpg" class="img-fluid" alt="Projet Application 1">
               </div>
-            </div><!-- End Portfolio Item -->
-
-            
-
-            <!-- Portfolio Item: Site Web -->
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
-              <img src="assets/img/portfolio/web-project-2.jpg" class="img-fluid" alt="Projet Site Web 2">
-              <div class="portfolio-info">
+              <div class="portfolio-card-body">
+                <h4>Agence Immobilière</h4>
+                <p>Développement d'un site interactif pour une agence immobilière</p>
+                <div class="portfolio-card-actions">
+                  <a href="assets/img/portfolio/app-project-1.jpg" title="Aperçu site agence immobilière" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i> Aperçu</a>
+                  <a href="agenceimmo.html" title="Plus de détails" class="details-link"><i class="bi bi-link-45deg"></i> Détails</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Projet 3 -->
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-card">
+              <div class="portfolio-img-wrap">
+                <img src="assets/img/portfolio/web-project-2.jpg" class="img-fluid" alt="Projet Site Web 2">
+              </div>
+              <div class="portfolio-card-body">
                 <h4>Site Web Serrurier Pro</h4>
                 <p>Développement d'un site web de serrurier</p>
-                <a href="assets/img/portfolio/web-project-2.jpg" title="Aperçu Site Web serrurierpro" data-gallery="portfolio-gallery-web" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="serrurierpro.html" title="Plus de détails" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                <div class="portfolio-card-actions">
+                  <a href="assets/img/portfolio/web-project-2.jpg" title="Aperçu Site Web serrurierpro" data-gallery="portfolio-gallery-web" class="glightbox preview-link"><i class="bi bi-zoom-in"></i> Aperçu</a>
+                  <a href="serrurierpro.html" title="Plus de détails" class="details-link"><i class="bi bi-link-45deg"></i> Détails</a>
+                </div>
               </div>
-            </div><!-- End Portfolio Item -->
-
-            <!-- Portfolio Item: Application -->
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/portfolio/app-project-2.jpg" class="img-fluid" alt="Projet Application 2">
-              <div class="portfolio-info">
+            </div>
+          </div>
+          <!-- Projet 4 -->
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-card">
+              <div class="portfolio-img-wrap">
+                <img src="assets/img/portfolio/app-project-2.jpg" class="img-fluid" alt="Projet Application 2">
+              </div>
+              <div class="portfolio-card-body">
                 <h4>Biblio</h4>
-                <p>Application web de gestion d'une Bibliothéque</p>
-                <a href="assets/img/portfolio/app-project-2.jpg" title="Aperçu Application biblio" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="biblio.html" title="Plus de détails" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                <p>Application web de gestion d'une Bibliothèque</p>
+                <div class="portfolio-card-actions">
+                  <a href="assets/img/portfolio/app-project-2.jpg" title="Aperçu Application biblio" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i> Aperçu</a>
+                  <a href="biblio.html" title="Plus de détails" class="details-link"><i class="bi bi-link-45deg"></i> Détails</a>
+                </div>
               </div>
-            </div><!-- End Portfolio Item -->
-
-            
-
-          </div><!-- End Portfolio Container -->
-
+            </div>
+          </div>
+          <!-- Projet 5 -->
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-card">
+              <div class="portfolio-img-wrap">
+                <img src="assets/img/portfolio/estelle.png" class="img-fluid" alt="Projet Application 2">
+              </div>
+              <div class="portfolio-card-body">
+                <h4>Estelle Mercier PHP</h4>
+                <p>Site e-commerce de vente de bijoux, gestion des stocks, gestion des commandes, gestion des clients, et gestion des paiements</p>
+                <div class="portfolio-card-actions">
+                  <a href="assets/img/portfolio/app-project-2.jpg" title="Aperçu Application biblio" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i> Aperçu</a>
+                  <a href="biblio.html" title="Plus de détails" class="details-link"><i class="bi bi-link-45deg"></i> Détails</a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-
       </div>
-
-    </section><!-- /Portfolio Section -->
-</main>
+    </section>
+  </main>
 
   
 <footer id="footer" class="footer pastel-footer py-4">
@@ -181,6 +200,29 @@
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
 
+  <script>
+    // Filtrage des projets portfolio
+    document.addEventListener('DOMContentLoaded', function() {
+      const filterBtns = document.querySelectorAll('.filter-btn');
+      const items = document.querySelectorAll('.portfolio-item');
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', function() {
+          filterBtns.forEach(b => b.classList.remove('active'));
+          this.classList.add('active');
+          const filter = this.getAttribute('data-filter');
+          items.forEach(item => {
+            if (filter === '*' || item.classList.contains(filter.replace('.', ''))) {
+              item.style.display = '';
+              item.classList.remove('d-none');
+            } else {
+              item.style.display = 'none';
+              item.classList.add('d-none');
+            }
+          });
+        });
+      });
+    });
+  </script>
 </body>
 
 </html>
