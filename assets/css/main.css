@@ -1,29 +1,50 @@
-/* Fonts */
+/* ==========================================================================================================
+                                        BIENVENUE SUR MON PORTFOLIO: TRABELSI NADIA
+   ========================================================================================================== */
+/* ==========================================
+   CONFIGURATION GÉNÉRALE
+   ========================================== */
+
+/* ==========================================
+   POLICES & TYPOGRAPHIE
+   ========================================== */
 :root {
   --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --heading-font: "Raleway",  sans-serif;
   --nav-font: "Poppins",  sans-serif;
 }
 
-/* === Palette pastel violette personnalisée === */
+/* ==========================================
+   PALETTE DE COULEURS PASTEL VIOLETTE MA COULEUR PRÉFÉRÉE : NADIA TRABELSI
+   ========================================== */
 :root {
-  --violet-pastel: #b39ddb;
-  --lavande: #e1bee7;
-  --blanc-casse: #f8f6fc;
-  --gris-doux: #d1c4e9;
-  --violet-fonce: #7e57c2;
-  --violet-text: #7e57c2;
-  --accent-color: #b39ddb;
-  --background-color: #f8f6fc;
-  --surface-color: #e1bee7;
-  --heading-color: #7e57c2;
-  --default-color: #444444;
+  --violet-pastel: #b39ddb;      /* Violet principal */
+  --lavande: #e1bee7;            /* Lavande claire */
+  --blanc-casse: #f8f6fc;        /* Blanc cassé */
+  --gris-doux: #d1c4e9;          /* Gris doux */
+  --violet-fonce: #7e57c2;       /* Violet foncé */
+  --violet-text: #7e57c2;        /* Couleur texte violet */
+  --accent-color: #b39ddb;       /* Couleur d'accent */
+  --background-color: #f8f6fc;   /* Couleur de fond */
+  --surface-color: #e1bee7;      /* Couleur de surface */
+  --heading-color: #7e57c2;      /* Couleur des titres */
+  --default-color: #444444;      /* Couleur texte par défaut */
 }
 
-/* === Classes utilitaires pour le nouveau design === */
+/* ==========================================
+   CLASSES UTILITAIRES - DESIGN PASTEL
+   ========================================== */
+
+/* ==========================================
+   COULEURS DE FOND
+   ========================================== */
 .violet-bg {
   background: var(--background-color) !important;
 }
+
+/* ==========================================
+   HEADER PASTEL
+   ========================================== */
 .pastel-header {
   background: var(--lavande);
   box-shadow: 0 2px 12px #b39ddb22;
@@ -119,17 +140,23 @@ h2, .fw-bold {
   }
 }
 
-/* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
+/* ==========================================
+   VARIABLES DE NAVIGATION
+   ========================================== */
+/* Variables spécifiques au menu de navigation pour plus de flexibilité */
 :root {
-  --nav-color: #444444;  /* The default color of the main navmenu links */
-  --nav-hover-color: #3462b7; /* Applied to main navmenu links when they are hovered over or active */
-  --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
-  --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
-  --nav-dropdown-color: #444444; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #3462b7; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  --nav-color: #444444;                    /* Couleur par défaut des liens de navigation */
+  --nav-hover-color: #3462b7;              /* Couleur au survol et état actif */
+  --nav-mobile-background-color: #ffffff;  /* Fond du menu mobile */
+  --nav-dropdown-background-color: #ffffff; /* Fond des menus déroulants */
+  --nav-dropdown-color: #444444;           /* Couleur des liens dans les menus déroulants */
+  --nav-dropdown-hover-color: #3462b7;     /* Couleur au survol dans les menus déroulants */
 }
 
-/* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
+/* ==========================================
+   PRÉSÉLECTIONS DE COULEURS
+   ========================================== */
+/* Classes qui remplacent les couleurs globales pour des thèmes spécifiques */
 
 .light-background {
   --background-color: #f4f2ee;
@@ -144,14 +171,17 @@ h2, .fw-bold {
   --contrast-color: #ffffff;
 }
 
-/* Smooth scroll */
+/* ==========================================
+   COMPORTEMENTS GÉNÉRAUX
+   ========================================== */
+/* Défilement fluide */
 :root {
   scroll-behavior: smooth;
 }
 
-/*--------------------------------------------------------------
-# General Styling & Shared Classes
---------------------------------------------------------------*/
+/* ==========================================
+   STYLES GÉNÉRAUX & CLASSES PARTAGÉES
+   ========================================== */
 body {
   color: var(--default-color);
   background-color: var(--background-color);
@@ -179,61 +209,11 @@ h6 {
   font-family: var(--heading-font);
 }
 
-/* PHP Email Form Messages
-------------------------------*/
-.php-email-form .error-message {
-  display: none;
-  background: #df1529;
-  color: #ffffff;
-  text-align: left;
-  padding: 15px;
-  margin-bottom: 24px;
-  font-weight: 600;
-}
 
-.php-email-form .sent-message {
-  display: none;
-  color: #ffffff;
-  background: #059652;
-  text-align: center;
-  padding: 15px;
-  margin-bottom: 24px;
-  font-weight: 600;
-}
 
-.php-email-form .loading {
-  display: none;
-  background: var(--surface-color);
-  text-align: center;
-  padding: 15px;
-  margin-bottom: 24px;
-}
-
-.php-email-form .loading:before {
-  content: "";
-  display: inline-block;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  margin: 0 10px -6px 0;
-  border: 3px solid var(--accent-color);
-  border-top-color: var(--surface-color);
-  animation: php-email-form-loading 1s linear infinite;
-}
-
-@keyframes php-email-form-loading {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-/*--------------------------------------------------------------
-# Global Header
---------------------------------------------------------------*/
+/* ==========================================
+   HEADER GLOBAL
+   ========================================== */
 
 #hero {
   display: flex;
@@ -349,9 +329,9 @@ p {
       height: 150px;
   }
 }
-/*--------------------------------------------------------------
-# Navigation Menu
---------------------------------------------------------------*/
+/* ==========================================
+   MENU DE NAVIGATION
+   ========================================== */
 /* Desktop Navigation */
 @media (min-width: 1200px) {
   .navmenu {
@@ -610,9 +590,9 @@ p {
   }
 }
 
-/*--------------------------------------------------------------
-# Global Footer
---------------------------------------------------------------*/
+/* ==========================================
+   FOOTER GLOBAL
+   ========================================== */
 .footer {
   color: var(--default-color);
   background-color: var(--background-color);
@@ -656,9 +636,9 @@ p {
   text-align: center;
 }
 
-/*--------------------------------------------------------------
-# Preloader
---------------------------------------------------------------*/
+/* ==========================================
+   PRÉCHARGEUR (LOADING)
+   ========================================== */
 #preloader {
   position: fixed;
   inset: 0;
@@ -701,9 +681,9 @@ p {
   }
 }
 
-/*--------------------------------------------------------------
-# Scroll Top Button
---------------------------------------------------------------*/
+/* ==========================================
+   BOUTON RETOUR EN HAUT
+   ========================================== */
 .scroll-top {
   position: fixed;
   visibility: hidden;
@@ -735,18 +715,18 @@ p {
   bottom: 15px;
 }
 
-/*--------------------------------------------------------------
-# Disable aos animation delay on mobile devices
---------------------------------------------------------------*/
+/* ==========================================
+   DÉSACTIVATION DES ANIMATIONS AOS SUR MOBILE
+   ========================================== */
 @media screen and (max-width: 768px) {
   [data-aos-delay] {
     transition-delay: 0 !important;
   }
 }
 
-/*--------------------------------------------------------------
-# Global Page Titles & Breadcrumbs
---------------------------------------------------------------*/
+/* ==========================================
+   TITRES DE PAGES & FIL D'ARIANE
+   ========================================== */
 .page-title {
   color: var(--default-color);
   background-color: var(--background-color);
@@ -781,9 +761,9 @@ p {
   color: color-mix(in srgb, var(--default-color), transparent 70%);
 }
 
-/*--------------------------------------------------------------
-# Global Sections
---------------------------------------------------------------*/
+/* ==========================================
+   SECTIONS GLOBALES
+   ========================================== */
 section,
 .section {
   color: var(--default-color);
@@ -801,9 +781,9 @@ section,
   }
 }
 
-/*--------------------------------------------------------------
-# Global Section Titles
---------------------------------------------------------------*/
+/* ==========================================
+   TITRES DE SECTIONS GLOBALES
+   ========================================== */
 .section-title {
   text-align: center;
   padding-bottom: 60px;
@@ -835,9 +815,9 @@ section,
   margin-bottom: 0;
 }
 
-/*--------------------------------------------------------------
-# Hero Section - Ajustements
---------------------------------------------------------------*/
+/* ==========================================
+   SECTION HERO - AJUSTEMENTS
+   ========================================== */
 .hero {
   width: 100%;
   min-height: calc(100vh - 82px);
@@ -932,9 +912,9 @@ section,
 }
 
 
-/*--------------------------------------------------------------
-# About Section
---------------------------------------------------------------*/
+/* ==========================================
+   SECTION À PROPOS
+   ========================================== */
 
 .about .content h2 {
   font-weight: 700;
@@ -976,9 +956,9 @@ section,
   margin-top: -30px;
   
 }
-/*--------------------------------------------------------------
-# Skills Section
---------------------------------------------------------------*/
+/* ==========================================
+   SECTION COMPÉTENCES
+   ========================================== */
 .skills .progress {
   height: 60px;
   display: block;
@@ -1078,9 +1058,9 @@ section,
 }
 
 
-/*--------------------------------------------------------------
-# education Section
---------------------------------------------------------------*/
+/* ==========================================
+   SECTION ÉDUCATION
+   ========================================== */
 .resume .resume-title {
   color: var(--heading-color);
   font-size: 26px;
@@ -1139,9 +1119,9 @@ section,
 .education{
   margin-top: -150px !important;
 }
-/*--------------------------------------------------------------
-# experiences Section
---------------------------------------------------------------*/
+/* ==========================================
+   SECTION EXPÉRIENCES
+   ========================================== */
 .services .service-item {
   background-color: var(--surface-color);
   box-shadow: 0px 5px 90px 0px rgba(0, 0, 0, 0.1);
@@ -1268,9 +1248,9 @@ section,
   fill: #f3268c;
 }
 
-/*--------------------------------------------------------------
-# Portfolio Section
---------------------------------------------------------------*/
+/* ==========================================
+   SECTION PORTFOLIO
+   ========================================== */
 .portfolio .portfolio-filters {
   padding: 0;
   margin: 0 auto 20px auto;
@@ -1371,9 +1351,9 @@ section,
 .portfolio{
   margin-top: -150px !important;
 }
-/*--------------------------------------------------------------
-# Portfolio Details Section
---------------------------------------------------------------*/
+/* ==========================================
+   SECTION DÉTAILS PORTFOLIO
+   ========================================== */
 .portfolio-details .portfolio-details-slider img {
   width: 100%;
 }
@@ -1435,9 +1415,9 @@ section,
 .portfolio-details{
   margin-top: -150px !important;
 }
-/*--------------------------------------------------------------
-# Contact Section
---------------------------------------------------------------*/
+/* ==========================================
+   SECTION CONTACT
+   ========================================== */
 .contact .info-wrap {
   background-color: var(--surface-color);
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
