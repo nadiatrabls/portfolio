@@ -56,6 +56,13 @@
   align-items: center;
   justify-content: center;
 }
+#hero.pastel-hero-bg {
+  display: flex;
+  align-items: center;
+  min-height: 80vh;
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
+}
 .violet-text {
   color: var(--violet-text) !important;
 }
@@ -99,10 +106,19 @@
 .header-social-links .social-link:hover {
   color: var(--violet-pastel);
 }
-/* Hero section image et QR code */
+/* ==========================================
+   IMAGE DE PROFIL & QR CODE
+   ========================================== */
+/* Styles de base pour l'image de profil */
 .profile-picture {
   border: 6px solid var(--lavande);
   box-shadow: 0 4px 24px #b39ddb33;
+  display: block;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  background-color: transparent;
 }
 .qr-code-img {
   border-radius: 16px;
@@ -127,6 +143,9 @@ h2, .fw-bold {
   color: #fff !important;
 }
 /* Responsive ajustements */
+/* ==========================================
+   RESPONSIVE - IMAGES DE PROFIL
+   ========================================== */
 @media (max-width: 768px) {
   .pastel-header, .pastel-hero-bg {
     padding: 1rem 0;
@@ -229,14 +248,18 @@ h6 {
   position: relative;
 }
 
+/* ==========================================
+   HERO SECTION - IMAGE DE PROFIL SPÉCIFIQUE
+   ========================================== */
+/* Styles spécifiques pour l'image de profil dans la section hero */
 .profile-picture {
-  width:50px; /* Ajustez la taille de l'image de profil */
+  width: 50px; /* Taille spécifique pour le hero */
   height: 150px;
-  border-radius: 50%; /* Rend l'image ronde */
-  margin-top: 120px; /* Espace entre le haut de la page et l'image */
+  border-radius: 50%;
+  margin-top: 120px;
   margin-left: 650px !important;
-  border: 4px solid #fff; /* Optionnel : ajoute une bordure blanche autour de l'image */
-  margin-bottom: 50px !important; /* Espace entre la photo et le texte */
+  border: 4px solid #fff;
+  margin-bottom: 50px !important;
 }
 
 h2 {
@@ -314,6 +337,10 @@ p {
     order: 3;
   }
 }
+/* ==========================================
+   HEADER - IMAGE DE PROFIL
+   ========================================== */
+/* Styles pour l'image de profil dans le header */
 .profile-picture {
   display: block;
   width: 200px;
@@ -323,6 +350,9 @@ p {
   background-color: transparent;
 }
 
+/* ==========================================
+   RESPONSIVE - HEADER IMAGE DE PROFIL
+   ========================================== */
 @media (max-width: 768px) {
   .profile-picture {
       width: 150px;
@@ -816,7 +846,7 @@ section,
 }
 
 /* ==========================================
-   SECTION HERO - AJUSTEMENTS
+   SECTION HERO - STYLES PRINCIPAUX
    ========================================== */
 .hero {
   width: 100%;
@@ -888,7 +918,9 @@ section,
   margin-bottom: -100px !important;
 }
 
-/* Responsive */
+/* ==========================================
+   RESPONSIVE HERO - MOBILE
+   ========================================== */
 @media (max-width: 768px) {
   .hero h2 {
     font-size: 32px;
@@ -1536,7 +1568,9 @@ section,
   background: color-mix(in srgb, var(--accent-color), transparent 25%);
 }
 
-/* HERO SECTION 2 COLONNES */
+/* ==========================================
+   HERO SECTION - LAYOUT 2 COLONNES
+   ========================================== */
 #hero .row {
   min-height: 60vh;
 }
@@ -1581,7 +1615,9 @@ section,
   }
 }
 
-/* HERO RESPONSIVE AMÉLIORÉ */
+/* ==========================================
+   HERO RESPONSIVE - TABLET
+   ========================================== */
 @media (max-width: 991.98px) {
   #hero .row {
     flex-direction: column-reverse !important;
@@ -1595,6 +1631,114 @@ section,
   #hero .profile-picture.hero-photo {
     margin: 0 auto 1.5rem auto !important;
     display: block;
+  }
+}
+
+/* ==========================================
+   TABLETTE PORTRAIT (768px - 991px) - STYLES SPÉCIFIQUES
+   ========================================== */
+@media (min-width: 768px) and (max-width: 991px) {
+  #hero .row {
+    flex-direction: row !important;
+    text-align: left !important;
+  }
+  
+  #hero .col-md-7 {
+    text-align: left !important;
+    margin-bottom: 0 !important;
+  }
+  
+  #hero .col-md-5 {
+    text-align: center !important;
+  }
+  
+  #hero .nadia {
+    font-size: 3rem !important;
+    margin-bottom: 0.5rem !important;
+  }
+  
+  #hero .cda {
+    font-size: 1.4rem !important;
+    margin-bottom: 0.5rem !important;
+  }
+  
+  #hero .desc {
+    font-size: 1.1rem !important;
+    line-height: 1.6 !important;
+  }
+  
+  #hero .propos {
+    margin: 1.5rem 0 !important;
+    display: inline-block !important;
+    width: auto !important;
+  }
+  
+  #hero .qr-code {
+    margin-top: 1.5rem !important;
+  }
+  
+  #hero .profile-picture.hero-photo {
+    width: 220px !important;
+    height: 220px !important;
+    margin: 0 auto !important;
+    display: block !important;
+  }
+  
+  #hero .qr-code-img {
+    width: 90px !important;
+  }
+  
+  /* Page About - Tablette Portrait */
+  #about .row.align-items-center {
+    flex-direction: row !important;
+    align-items: center !important;
+  }
+  
+  #about .col-lg-4 {
+    text-align: center !important;
+    margin-bottom: 2rem !important;
+  }
+  
+  #about .col-lg-8 {
+    text-align: left !important;
+  }
+  
+  #about .profile-picture {
+    width: 250px !important;
+    height: 250px !important;
+    margin: 0 auto !important;
+    display: block !important;
+  }
+  
+  #about .about-badges-row {
+    flex-direction: row !important;
+    justify-content: center !important;
+    gap: 1rem !important;
+  }
+  
+  #about .about-badge {
+    width: auto !important;
+    max-width: 200px !important;
+    flex: 0 1 auto !important;
+  }
+  
+  #about .lead {
+    font-size: 1.1rem !important;
+    line-height: 1.7 !important;
+  }
+  
+  #about .btn-cv-3d {
+    margin: 1.5rem 0 !important;
+    padding: 0.75rem 2rem !important;
+    font-size: 1rem !important;
+  }
+  
+  .mp {
+    font-size: 1.3rem !important;
+  }
+  
+  .bgv {
+    font-size: 1rem !important;
   }
 }
 @media (max-width: 575.98px) {
@@ -1763,11 +1907,11 @@ section,
   }
 }
 
-/* HERO PHOTO TOUJOURS VISIBLE */
+/* ==========================================
+   HERO PHOTO - VISIBILITÉ & POSITIONNEMENT
+   ========================================== */
 #hero .profile-picture.hero-photo {
   display: block !important;
-}
-#hero .profile-picture.hero-photo {
   margin-top: 0.5rem !important;
   margin-bottom: 0.5rem !important;
 }
@@ -1780,13 +1924,10 @@ section,
   }
 }
 
-#hero.pastel-hero-bg {
-  display: flex;
-  align-items: center;
-  min-height: 80vh;
-  padding-top: 1rem !important;
-  padding-bottom: 1rem !important;
-}
+/* ==========================================
+   HERO BACKGROUND PASTEL
+   ========================================== */
+
 @media (max-width: 991.98px) {
   #hero.pastel-hero-bg {
     min-height: 60vh;
@@ -1795,6 +1936,9 @@ section,
   }
 }
 
+/* ==========================================
+   HERO COLONNE GAUCHE - LAYOUT
+   ========================================== */
 #hero .col-md-7 .d-flex.flex-column {
   margin-top: -100px;
   align-items: center !important;
@@ -1804,6 +1948,9 @@ section,
     align-items: flex-start !important;
   }
 }
+/* ==========================================
+   HERO QR CODE
+   ========================================== */
 #hero .qr-code {
   margin-top: 0 !important;
 }
@@ -1825,6 +1972,9 @@ section,
   }
 }
 
+/* ==========================================
+   HERO CONTAINER & ROW
+   ========================================== */
 #hero.pastel-hero-bg > .container {
   width: 100%;
   height: 100%;
@@ -3063,4 +3213,196 @@ section,
   justify-content: center;
   background: transparent;
   min-height: 500px;
+}
+
+/* ==========================================
+   STYLES SPÉCIFIQUES TABLETTES - INDEX & ABOUT
+   ========================================== */
+
+/* ==========================================
+   TABLETTE PORTRAIT (768px - 991px)
+   ========================================== */
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Page d'accueil - Tablette Portrait */
+  #hero .row {
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  #hero .col-md-7 {
+    text-align: left;
+    margin-bottom: 0;
+  }
+  
+  #hero .col-md-5 {
+    text-align: center;
+  }
+  
+  #hero .nadia {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  #hero .cda {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  #hero .desc {
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
+  #hero .propos {
+    margin: 1.5rem 0;
+    display: inline-block;
+    width: auto;
+  }
+  
+  #hero .qr-code {
+    margin-top: 1.5rem;
+  }
+  
+  #hero .profile-picture.hero-photo {
+    width: 220px !important;
+    height: 220px !important;
+    margin: 0 auto;
+    display: block;
+  }
+  
+  #hero .qr-code-img {
+    width: 90px !important;
+  }
+  
+  /* Page About - Tablette Portrait */
+  #about .row.align-items-center {
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  #about .col-lg-4 {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  #about .col-lg-8 {
+    text-align: left;
+  }
+  
+  #about .profile-picture {
+    width: 250px !important;
+    height: 250px !important;
+    margin: 0 auto;
+    display: block;
+  }
+  
+  #about .about-badges-row {
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  #about .about-badge {
+    width: auto;
+    max-width: 200px;
+    flex: 0 1 auto;
+  }
+  
+  #about .lead {
+    font-size: 1.1rem;
+    line-height: 1.7;
+  }
+  
+  #about .btn-cv-3d {
+    margin: 1.5rem 0;
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+  }
+  
+  .mp {
+    font-size: 1.3rem;
+  }
+  
+  .bgv {
+    font-size: 1rem;
+  }
+}
+
+/* ==========================================
+   TABLETTE PAYSAGE (992px - 1199px) - STYLES SPÉCIFIQUES
+   ========================================== */
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* Page d'accueil - Tablette Paysage */
+  #hero .col-md-7 .d-flex.flex-column {
+    align-items: flex-start !important;
+  }
+  
+  #hero .col-md-5 {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  
+  #hero .profile-picture.hero-photo {
+    width: 240px !important;
+    height: 240px !important;
+  }
+  
+  #hero .nadia {
+    font-size: 3.2rem !important;
+  }
+  
+  #hero .cda {
+    font-size: 1.5rem !important;
+  }
+  
+  #hero .desc {
+    font-size: 1.2rem !important;
+  }
+  
+  /* Page About - Tablette Paysage */
+  #about .row.align-items-center {
+    align-items: center !important;
+  }
+  
+  #about .col-lg-4 {
+    flex: 0 0 41.666667% !important;
+    max-width: 41.666667% !important;
+    padding-right: 2rem !important;
+  }
+  
+  #about .col-lg-8 {
+    flex: 0 0 58.333333% !important;
+    max-width: 58.333333% !important;
+    padding-left: 2rem !important;
+  }
+  
+  #about .profile-picture {
+    width: 280px !important;
+    height: 280px !important;
+  }
+  
+  #about .about-badges-row {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 1rem !important;
+    justify-content: flex-start !important;
+  }
+  
+  #about .about-badge {
+    flex: 1 1 180px !important;
+    max-width: 180px !important;
+  }
+  
+  #about .lead {
+    font-size: 1.2rem !important;
+  }
+  
+  .mp {
+    font-size: 1.4rem !important;
+  }
+  
+  .bgv {
+    font-size: 1.1rem !important;
+  }
 }
