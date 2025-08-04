@@ -1831,8 +1831,12 @@ section,
     display: none !important;
   }
   .header-social-links.d-md-none {
-    display: flex !important;
-    margin-top: 0.5rem;
+    display: none !important;
+  }
+  
+  /* Masquer tous les liens sociaux en mode responsive */
+  .header-social-links {
+    display: none !important;
   }
   .mobile-nav-toggle {
     display: block !important;
