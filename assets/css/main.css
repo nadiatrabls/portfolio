@@ -3410,3 +3410,479 @@ section,
     font-size: 1.1rem !important;
   }
 }
+
+/* ==========================================
+   TÉLÉPHONE EN ROTATION PAYSAGE - STYLES FORCÉS
+   ========================================== */
+@media (max-width: 767px) and (orientation: landscape) {
+  /* Header en mode paysage */
+  .header .container {
+    padding: 0.5rem 1rem !important;
+  }
+  
+  .header .sitename {
+    font-size: 1.5rem !important;
+  }
+  
+  /* Hero section en mode paysage */
+  #hero .row {
+    flex-direction: row !important;
+    align-items: center !important;
+    min-height: 60vh !important;
+    margin: 0 !important;
+  }
+  
+  #hero .col-md-7 {
+    text-align: left !important;
+    margin-bottom: 0 !important;
+    padding-right: 1rem !important;
+    flex: 0 0 60% !important;
+    max-width: 60% !important;
+  }
+  
+  #hero .col-md-5 {
+    text-align: center !important;
+    padding-left: 1rem !important;
+    flex: 0 0 40% !important;
+    max-width: 40% !important;
+  }
+  
+  #hero .nadia {
+    font-size: 1.8rem !important;
+    margin-bottom: 0.3rem !important;
+  }
+  
+  #hero .cda {
+    font-size: 1rem !important;
+    margin-bottom: 0.3rem !important;
+  }
+  
+  #hero .desc {
+    font-size: 0.85rem !important;
+    line-height: 1.3 !important;
+  }
+  
+  #hero .propos {
+    margin: 0.5rem 0 !important;
+    padding: 0.4rem 1.2rem !important;
+    font-size: 0.85rem !important;
+  }
+  
+  #hero .profile-picture.hero-photo {
+    width: 100px !important;
+    height: 100px !important;
+    margin: 0 auto !important;
+  }
+  
+  #hero .qr-code {
+    margin-top: 0.3rem !important;
+  }
+  
+  #hero .qr-code-img {
+    width: 50px !important;
+  }
+  
+  /* About page en mode paysage */
+  #about .row.align-items-center {
+    flex-direction: row !important;
+    align-items: center !important;
+    min-height: 60vh !important;
+    margin: 0 !important;
+  }
+  
+  #about .col-lg-4 {
+    text-align: center !important;
+    margin-bottom: 0 !important;
+    padding-right: 1rem !important;
+    flex: 0 0 40% !important;
+    max-width: 40% !important;
+  }
+  
+  #about .col-lg-8 {
+    text-align: left !important;
+    padding-left: 1rem !important;
+    flex: 0 0 60% !important;
+    max-width: 60% !important;
+  }
+  
+  #about .profile-picture {
+    width: 100px !important;
+    height: 100px !important;
+    margin: 0 auto !important;
+  }
+  
+  #about .about-badges-row {
+    flex-direction: row !important;
+    justify-content: flex-start !important;
+    gap: 0.3rem !important;
+    flex-wrap: wrap !important;
+  }
+  
+  #about .about-badge {
+    width: auto !important;
+    max-width: 120px !important;
+    font-size: 0.75rem !important;
+    padding: 0.2rem 0.5rem !important;
+  }
+  
+  #about .lead {
+    font-size: 0.85rem !important;
+    line-height: 1.3 !important;
+  }
+  
+  #about .btn-cv-3d {
+    margin: 0.3rem 0 !important;
+    padding: 0.4rem 1.2rem !important;
+    font-size: 0.85rem !important;
+  }
+  
+  .mp {
+    font-size: 0.9rem !important;
+  }
+  
+  .bgv {
+    font-size: 0.75rem !important;
+  }
+  
+  /* Navigation mobile en mode paysage */
+  body.mobile-nav-active .navmenu ul {
+    top: 60px !important;
+    padding: 0.5rem 0 !important;
+    gap: 0.5rem !important;
+  }
+  
+  /* Footer en mode paysage */
+  .footer {
+    padding: 10px 0 !important;
+  }
+  
+  .footer .social-links {
+    gap: 0.3rem !important;
+  }
+  
+  /* Masquer les éléments non essentiels */
+  #hero .qr-code {
+    display: none !important;
+  }
+  
+  /* Ajuster les marges et paddings */
+  #hero.pastel-hero-bg {
+    padding: 1rem 0 !important;
+  }
+  
+  #about.pastel-hero-bg {
+    padding: 1rem 0 !important;
+  }
+  
+  /* Styles forcés pour corriger l'organisation */
+  #hero .container {
+    max-width: 100% !important;
+    padding: 0 1rem !important;
+  }
+  
+  #hero .row {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  
+  #hero .col-md-7,
+  #hero .col-md-5 {
+    padding: 0.5rem !important;
+  }
+  
+  #hero .d-flex.flex-column {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  
+  /* Forcer la taille des textes */
+  #hero .nadia {
+    font-size: 1.5rem !important;
+    line-height: 1.2 !important;
+    margin: 0 !important;
+  }
+  
+  #hero .cda {
+    font-size: 0.9rem !important;
+    line-height: 1.2 !important;
+    margin: 0.2rem 0 !important;
+  }
+  
+  #hero .desc {
+    font-size: 0.8rem !important;
+    line-height: 1.3 !important;
+    margin: 0.5rem 0 !important;
+  }
+  
+  #hero .propos {
+    font-size: 0.8rem !important;
+    padding: 0.3rem 1rem !important;
+    margin: 0.5rem 0 !important;
+  }
+  
+  /* Forcer la taille de la photo */
+  #hero .profile-picture.hero-photo {
+    width: 80px !important;
+    height: 80px !important;
+    margin: 0 auto !important;
+  }
+  
+  /* Afficher le QR code mais plus petit */
+  #hero .qr-code {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    margin-top: 0.3rem !important;
+  }
+  
+  #hero .qr-code-img {
+    width: 40px !important;
+    height: 40px !important;
+  }
+  
+  /* Ajuster les paddings des sections */
+  #hero.pastel-hero-bg,
+  #about.pastel-hero-bg {
+    padding: 0.5rem 0 !important;
+    min-height: 50vh !important;
+  }
+  
+  /* Forcer l'alignement */
+  #hero .col-md-7 {
+    text-align: left !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: flex-start !important;
+  }
+  
+  #hero .col-md-5 {
+    text-align: center !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  
+  /* Améliorer l'espacement général */
+  #hero .d-flex.flex-column {
+    gap: 0.5rem !important;
+    align-items: flex-start !important;
+  }
+  
+  /* Tailles de texte optimisées */
+  #hero .nadia {
+    font-size: 1.4rem !important;
+    line-height: 1.2 !important;
+    margin: 0 0 0.2rem 0 !important;
+    font-weight: bold !important;
+  }
+  
+  #hero .cda {
+    font-size: 0.9rem !important;
+    line-height: 1.2 !important;
+    margin: 0 0 0.3rem 0 !important;
+    color: var(--violet-fonce) !important;
+  }
+  
+  #hero .desc {
+    font-size: 0.8rem !important;
+    line-height: 1.4 !important;
+    margin: 0 0 0.5rem 0 !important;
+    color: var(--violet-fonce) !important;
+  }
+  
+  #hero .propos {
+    font-size: 0.8rem !important;
+    padding: 0.4rem 1.2rem !important;
+    margin: 0 0 0.3rem 0 !important;
+    border-radius: 20px !important;
+    font-weight: 500 !important;
+  }
+  
+  /* Photo optimisée */
+  #hero .profile-picture.hero-photo {
+    width: 90px !important;
+    height: 90px !important;
+    margin: 0 auto !important;
+    border: 3px solid #e1bee7 !important;
+    box-shadow: 0 4px 12px rgba(179, 157, 219, 0.3) !important;
+  }
+  
+  /* QR code bien positionné */
+  #hero .qr-code {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    margin-top: 0.5rem !important;
+    text-align: center !important;
+  }
+  
+  #hero .qr-code-img {
+    width: 50px !important;
+    height: 50px !important;
+    border-radius: 8px !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1) !important;
+  }
+  
+  /* Ajuster les paddings des colonnes */
+  #hero .col-md-7,
+  #hero .col-md-5 {
+    padding: 0.5rem !important;
+  }
+  
+  /* Hauteur et padding optimisés */
+  #hero.pastel-hero-bg,
+  #about.pastel-hero-bg {
+    padding: 0.5rem 0 !important;
+    min-height: 60vh !important;
+  }
+  
+  /* Forcer la réduction de l'espacement en haut */
+  #hero {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+  
+  #hero .container {
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+  }
+  
+  #hero .row {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+  
+  /* Réduire l'espacement du header */
+  .header {
+    margin-bottom: 0 !important;
+    padding-bottom: 0.5rem !important;
+  }
+  
+  /* Ajuster l'espacement entre header et hero */
+  .header + main,
+  .header + #hero {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+  
+  /* Remonter le contenu principal */
+  .main {
+    margin-top: -1rem !important;
+    padding-top: 0 !important;
+  }
+  
+  #hero {
+    margin-top: -1rem !important;
+    padding-top: 0 !important;
+  }
+  
+  #hero .container {
+    padding-top: 0 !important;
+  }
+  
+  /* Forcer la suppression du padding Bootstrap */
+  .py-5 {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+  
+  #hero .container.py-5 {
+    padding: 0 !important;
+    padding-left: 40px !important;
+  }
+  
+  /* Réduire l'espacement du header */
+  .header {
+    margin-bottom: 0 !important;
+    padding-bottom: 0.2rem !important;
+  }
+  
+  /* Supprimer tous les paddings en haut */
+  #hero .container,
+  #hero .row,
+  #hero .col-md-7,
+  #hero .col-md-5 {
+    padding-top: 0 !important;
+  }
+  
+  /* Solution forcée - cibler directement les classes Bootstrap */
+  .py-5,
+  .py-4,
+  .py-3,
+  .py-2,
+  .py-1 {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+  
+  /* Cibler spécifiquement le container du hero */
+  #hero .container {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  
+  /* Forcer la suppression de tous les espacements */
+  #hero,
+  #hero *,
+  #hero .container,
+  #hero .row,
+  #hero .col-md-7,
+  #hero .col-md-5,
+  #hero .d-flex,
+  #hero .flex-column {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+  
+  /* Solution radicale - utiliser transform pour remonter */
+  #hero {
+    transform: translateY(-2rem) !important;
+  }
+  
+  /* Corriger le footer et le QR code */
+  .footer {
+    margin-top: 0 !important;
+    padding-top: 0.5rem !important;
+  }
+  
+  /* Masquer le QR code en mode rotation mobile */
+  #hero .qr-code {
+    display: none !important;
+  }
+  
+  /* Ajuster l'espacement du footer */
+  .footer .container {
+    padding: 0.5rem 0 !important;
+  }
+  
+  /* Réduire la taille des icônes sociales */
+  .footer .social-links {
+    gap: 0.5rem !important;
+  }
+  
+  .footer .social-links a {
+    font-size: 1.2rem !important;
+  }
+  
+  /* Masquer le cercle décoratif en mode rotation */
+  .footer::after,
+  .footer::before {
+    display: none !important;
+  }
+  
+  /* Améliorer l'alignement des colonnes */
+  #hero .col-md-7 {
+    flex: 0 0 65% !important;
+    max-width: 65% !important;
+  }
+  
+  #hero .col-md-5 {
+    flex: 0 0 35% !important;
+    max-width: 35% !important;
+  }
+  .pa {
+    padding-top: 100px !important;
+  }
+}
