@@ -1584,8 +1584,9 @@ section,
   margin-bottom: 1.5rem;
 }
 #hero .profile-picture.hero-photo {
-  width: 240px !important;
-  height: 240px !important;
+  /* Taille par défaut pour desktop */
+  /* width: 240px !important; */ /* Supprimé pour permettre l'agrandissement en landscape */
+  /* height: 240px !important; */ /* Supprimé pour permettre l'agrandissement en landscape */
   border-width: 8px;
 }
 /* HEADER RESPONSIVE */
@@ -1620,7 +1621,7 @@ section,
    ========================================== */
 @media (max-width: 991.98px) {
   #hero .row {
-    flex-direction: column-reverse !important;
+    /* flex-direction: column-reverse !important; */ /* Supprimé pour permettre l'ordre défini en landscape */
     text-align: center !important;
     min-height: unset;
   }
@@ -1678,8 +1679,7 @@ section,
   }
   
   #hero .profile-picture.hero-photo {
-    width: 220px !important;
-    height: 220px !important;
+    /* Supprimé pour permettre l'agrandissement en landscape */
     margin: 0 auto !important;
     display: block !important;
   }
@@ -1849,17 +1849,16 @@ section,
     align-items: center !important;
   }
   #about .col-lg-4, #about .col-lg-8, #hero .col-md-5, #hero .col-md-7 {
-    width: 100%;
-    max-width: 100%;
-    padding: 0 !important;
-    margin: 0 !important;
-    text-align: center !important;
-    align-items: center !important;
-  }
+  width: 100%;
+  max-width: 100%;
+  /* padding: 0 !important; */ /* Supprimé pour permettre les espacements */
+  /* margin: 0 !important; */ /* Supprimé pour permettre les espacements */
+  text-align: center !important;
+  align-items: center !important;
+}
   #about .profile-picture, #hero .profile-picture.hero-photo {
     margin: 0 auto 1.5rem auto !important;
-    width: 180px !important;
-    height: 180px !important;
+    /* Supprimé pour permettre l'agrandissement en landscape */
   }
   #about .about-badges-row {
     flex-direction: column;
@@ -1921,10 +1920,10 @@ section,
 }
 @media (max-width: 991.98px) {
   #hero .profile-picture.hero-photo {
-    margin-top: -100px !important;
-    margin-bottom: -200px!important;
-    width: 200px !important;
-    height: 200px !important;
+    /* margin-top: -100px !important; */ /* Supprimé pour éviter les chevauchements */
+    /* margin-bottom: -200px!important; */ /* Supprimé pour éviter les chevauchements */
+    /* width: 200px !important; */ /* Supprimé pour permettre l'agrandissement en landscape */
+    /* height: 200px !important; */ /* Supprimé pour permettre l'agrandissement en landscape */
   }
 }
 
@@ -1944,7 +1943,7 @@ section,
    HERO COLONNE GAUCHE - LAYOUT
    ========================================== */
 #hero .col-md-7 .d-flex.flex-column {
-  margin-top: -100px;
+  /* margin-top: -100px; */ /* Supprimé pour éviter les chevauchements */
   align-items: center !important;
 }
 @media (min-width: 768px) {
@@ -2024,18 +2023,18 @@ section,
 }
 
 #hero .profile-picture.hero-photo {
-  margin-top: -200px !important;
-  margin-bottom: -200px!important;
-  width: 400px !important;
-  height: 400px !important;
+  /* margin-top: -200px !important; */ /* Supprimé pour éviter les chevauchements */
+  /* margin-bottom: -200px!important; */ /* Supprimé pour éviter les chevauchements */
+  /* width: 400px !important; */ /* Supprimé pour permettre l'agrandissement en landscape */
+  /* height: 400px !important; */ /* Supprimé pour permettre l'agrandissement en landscape */
 }
 .qr-code{
-  margin-left: 200px !important;
-  margin-top: 100px !important;
-  margin-bottom: -120px !important;
+  /* margin-left: 200px !important; */ /* Supprimé pour permettre le centrage */
+  /* margin-top: 100px !important; */ /* Supprimé pour permettre le centrage */
+  /* margin-bottom: -120px !important; */ /* Supprimé pour éviter les chevauchements */
 }
 .propos{
-  margin-left: 160px !important;
+  /* margin-left: 160px !important; */ /* Supprimé pour permettre le centrage */
 }
 .moi{
   margin-left: -70px !important;
@@ -3910,7 +3909,7 @@ section,
     #hero .nadia { font-size: 2rem !important; }
     #hero .cda { font-size: 1.2rem !important; }
     #hero .desc { font-size: 1rem !important; }
-    #hero .profile-picture.hero-photo { width: 200px !important; height: 200px !important; }
+    #hero .profile-picture.hero-photo { /* Supprimé pour permettre l'agrandissement en landscape */ }
     #hero .qr-code-img { width: 80px !important; height: 80px !important; }
   }
   
@@ -3930,7 +3929,7 @@ section,
     #hero .nadia { font-size: 2.2rem !important; }
     #hero .cda { font-size: 1.3rem !important; }
     #hero .desc { font-size: 1.1rem !important; }
-    #hero .profile-picture.hero-photo { width: 220px !important; height: 220px !important; }
+    #hero .profile-picture.hero-photo { /* Supprimé pour permettre l'agrandissement en landscape */ }
     #hero .qr-code-img { width: 90px !important; height: 90px !important; }
   }
   
@@ -3975,8 +3974,7 @@ section,
     }
     
     #hero .profile-picture.hero-photo { 
-      width: 100px !important; 
-      height: 100px !important; 
+      /* Supprimé pour permettre l'agrandissement en landscape */
       border: 2px solid #e1bee7 !important;
     }
     
@@ -4008,7 +4006,7 @@ section,
     #hero .nadia { font-size: 2.1rem !important; }
     #hero .cda { font-size: 1.25rem !important; }
     #hero .desc { font-size: 1.05rem !important; }
-    #hero .profile-picture.hero-photo { width: 210px !important; height: 210px !important; }
+    #hero .profile-picture.hero-photo { /* Supprimé pour permettre l'agrandissement en landscape */ }
     #hero .qr-code-img { width: 85px !important; height: 85px !important; }
   }
   
@@ -4053,8 +4051,7 @@ section,
     }
     
     #hero .profile-picture.hero-photo { 
-      width: 80px !important; 
-      height: 80px !important; 
+      /* Supprimé pour permettre l'agrandissement en landscape */
       border: 2px solid #e1bee7 !important;
     }
     
