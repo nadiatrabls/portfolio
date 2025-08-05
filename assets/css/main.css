@@ -3847,9 +3847,13 @@ section,
     padding-top: 0.5rem !important;
   }
   
-  /* Masquer le QR code en mode rotation mobile */
+  /* Ajuster le QR code en mode rotation mobile */
   #hero .qr-code {
-    display: none !important;
+    margin-top: -20px !important;
+    margin-left: 280px !important;
+    text-align: center !important;
+    margin-bottom: 20px !important;
+
   }
   
   /* Ajuster l'espacement du footer */
@@ -3882,7 +3886,771 @@ section,
     flex: 0 0 35% !important;
     max-width: 35% !important;
   }
-  .pa {
-    padding-top: 100px !important;
+  .ft {
+    margin-top: -50px !important;
+  }
+  
+  /* ==========================================
+     RESPONSIVE POUR TOUS LES APPAREILS
+     ========================================== */
+  
+  /* iPhone SE (375x667) */
+  @media (width: 375px) and (height: 667px) {
+    #hero .row {
+      flex-direction: column !important;
+      text-align: center !important;
+    }
+    
+    #hero .col-md-7, #hero .col-md-5 {
+      flex: 0 0 100% !important;
+      max-width: 100% !important;
+      text-align: center !important;
+    }
+    
+    #hero .nadia { font-size: 2rem !important; }
+    #hero .cda { font-size: 1.2rem !important; }
+    #hero .desc { font-size: 1rem !important; }
+    #hero .profile-picture.hero-photo { width: 200px !important; height: 200px !important; }
+    #hero .qr-code-img { width: 80px !important; height: 80px !important; }
+  }
+  
+  /* iPhone XR (414x896) - Mode portrait */
+  @media (width: 414px) and (height: 896px) {
+    #hero .row {
+      flex-direction: column !important;
+      text-align: center !important;
+    }
+    
+    #hero .col-md-7, #hero .col-md-5 {
+      flex: 0 0 100% !important;
+      max-width: 100% !important;
+      text-align: center !important;
+    }
+    
+    #hero .nadia { font-size: 2.2rem !important; }
+    #hero .cda { font-size: 1.3rem !important; }
+    #hero .desc { font-size: 1.1rem !important; }
+    #hero .profile-picture.hero-photo { width: 220px !important; height: 220px !important; }
+    #hero .qr-code-img { width: 90px !important; height: 90px !important; }
+  }
+  
+  /* iPhone XR (896x414) - Mode paysage */
+  @media (width: 896px) and (height: 414px) {
+    #hero .row {
+      flex-direction: row !important;
+      align-items: center !important;
+      gap: 1rem !important;
+    }
+    
+    #hero .col-md-7 {
+      flex: 0 0 60% !important;
+      max-width: 60% !important;
+      text-align: left !important;
+    }
+    
+    #hero .col-md-5 {
+      flex: 0 0 40% !important;
+      max-width: 40% !important;
+      text-align: center !important;
+    }
+    
+    #hero .nadia { 
+      font-size: 1.4rem !important; 
+      line-height: 1.2 !important; 
+      margin: 0 0 0.2rem 0 !important;
+      word-wrap: break-word !important;
+    }
+    
+    #hero .cda { 
+      font-size: 0.9rem !important; 
+      line-height: 1.2 !important; 
+      margin: 0 0 0.3rem 0 !important;
+    }
+    
+    #hero .desc { 
+      font-size: 0.8rem !important; 
+      line-height: 1.3 !important; 
+      margin: 0 0 0.5rem 0 !important;
+      word-wrap: break-word !important;
+    }
+    
+    #hero .profile-picture.hero-photo { 
+      width: 100px !important; 
+      height: 100px !important; 
+      border: 2px solid #e1bee7 !important;
+    }
+    
+    #hero .qr-code-img { 
+      width: 40px !important; 
+      height: 40px !important; 
+    }
+    
+    #hero .propos {
+      font-size: 0.8rem !important;
+      padding: 0.3rem 1rem !important;
+      margin: 0.3rem 0 !important;
+    }
+  }
+  
+  /* iPhone 12 Pro (390x844) - Mode portrait */
+  @media (width: 390px) and (height: 844px) {
+    #hero .row {
+      flex-direction: column !important;
+      text-align: center !important;
+    }
+    
+    #hero .col-md-7, #hero .col-md-5 {
+      flex: 0 0 100% !important;
+      max-width: 100% !important;
+      text-align: center !important;
+    }
+    
+    #hero .nadia { font-size: 2.1rem !important; }
+    #hero .cda { font-size: 1.25rem !important; }
+    #hero .desc { font-size: 1.05rem !important; }
+    #hero .profile-picture.hero-photo { width: 210px !important; height: 210px !important; }
+    #hero .qr-code-img { width: 85px !important; height: 85px !important; }
+  }
+  
+  /* iPhone 12 Pro (844x390) - Mode paysage */
+  @media (width: 844px) and (height: 390px) {
+    #hero .row {
+      flex-direction: row !important;
+      align-items: center !important;
+      gap: 1rem !important;
+    }
+    
+    #hero .col-md-7 {
+      flex: 0 0 55% !important;
+      max-width: 55% !important;
+      text-align: left !important;
+    }
+    
+    #hero .col-md-5 {
+      flex: 0 0 45% !important;
+      max-width: 45% !important;
+      text-align: center !important;
+    }
+    
+    #hero .nadia { 
+      font-size: 1.2rem !important; 
+      line-height: 1.2 !important; 
+      margin: 0 0 0.2rem 0 !important;
+      word-wrap: break-word !important;
+    }
+    
+    #hero .cda { 
+      font-size: 0.8rem !important; 
+      line-height: 1.2 !important; 
+      margin: 0 0 0.3rem 0 !important;
+    }
+    
+    #hero .desc { 
+      font-size: 0.7rem !important; 
+      line-height: 1.3 !important; 
+      margin: 0 0 0.5rem 0 !important;
+      word-wrap: break-word !important;
+    }
+    
+    #hero .profile-picture.hero-photo { 
+      width: 80px !important; 
+      height: 80px !important; 
+      border: 2px solid #e1bee7 !important;
+    }
+    
+    #hero .qr-code-img { 
+      width: 35px !important; 
+      height: 35px !important; 
+    }
+    
+    #hero .propos {
+      font-size: 0.7rem !important;
+      padding: 0.3rem 1rem !important;
+      margin: 0.3rem 0 !important;
+    }
+  }
+  
+  /* iPhone 14 Pro Max (430x932) - Mode portrait */
+  @media (width: 430px) and (height: 932px) {
+    #hero .row {
+      flex-direction: column !important;
+      text-align: center !important;
+    }
+    
+    #hero .col-md-7, #hero .col-md-5 {
+      flex: 0 0 100% !important;
+      max-width: 100% !important;
+      text-align: center !important;
+    }
+    
+    #hero .nadia { font-size: 2.3rem !important; }
+    #hero .cda { font-size: 1.4rem !important; }
+    #hero .desc { font-size: 1.15rem !important; }
+    #hero .profile-picture.hero-photo { width: 230px !important; height: 230px !important; }
+    #hero .qr-code-img { width: 95px !important; height: 95px !important; }
+  }
+  
+  /* iPhone 14 Pro Max (932x430) - Mode paysage */
+  @media (width: 932px) and (height: 430px) {
+    #hero .row {
+      flex-direction: row !important;
+      align-items: center !important;
+      gap: 1rem !important;
+    }
+    
+    #hero .col-md-7 {
+      flex: 0 0 60% !important;
+      max-width: 60% !important;
+      text-align: left !important;
+    }
+    
+    #hero .col-md-5 {
+      flex: 0 0 40% !important;
+      max-width: 40% !important;
+      text-align: center !important;
+    }
+    
+    #hero .nadia { 
+      font-size: 1.5rem !important; 
+      line-height: 1.2 !important; 
+      margin: 0 0 0.2rem 0 !important;
+      word-wrap: break-word !important;
+    }
+    
+    #hero .cda { 
+      font-size: 1rem !important; 
+      line-height: 1.2 !important; 
+      margin: 0 0 0.3rem 0 !important;
+    }
+    
+    #hero .desc { 
+      font-size: 0.85rem !important; 
+      line-height: 1.3 !important; 
+      margin: 0 0 0.5rem 0 !important;
+      word-wrap: break-word !important;
+    }
+    
+    #hero .profile-picture.hero-photo { 
+      width: 110px !important; 
+      height: 110px !important; 
+      border: 2px solid #e1bee7 !important;
+    }
+    
+    #hero .qr-code-img { 
+      width: 45px !important; 
+      height: 45px !important; 
+    }
+    
+    #hero .propos {
+      font-size: 0.85rem !important;
+      padding: 0.3rem 1rem !important;
+      margin: 0.3rem 0 !important;
+    }
+  }
+  
+  /* Pixel 7 (412x915) - Mode portrait */
+  @media (width: 412px) and (height: 915px) {
+    #hero .row {
+      flex-direction: column !important;
+      text-align: center !important;
+    }
+    
+    #hero .col-md-7, #hero .col-md-5 {
+      flex: 0 0 100% !important;
+      max-width: 100% !important;
+      text-align: center !important;
+    }
+    
+    #hero .nadia { font-size: 2.2rem !important; }
+    #hero .cda { font-size: 1.3rem !important; }
+    #hero .desc { font-size: 1.1rem !important; }
+    #hero .profile-picture.hero-photo { width: 220px !important; height: 220px !important; }
+    #hero .qr-code-img { width: 90px !important; height: 90px !important; }
+  }
+  
+  /* Pixel 7 (915x412) - Mode paysage */
+  @media (width: 915px) and (height: 412px) {
+    #hero .row {
+      flex-direction: row !important;
+      align-items: center !important;
+      gap: 1rem !important;
+    }
+    
+    #hero .col-md-7 {
+      flex: 0 0 60% !important;
+      max-width: 60% !important;
+      text-align: left !important;
+    }
+    
+    #hero .col-md-5 {
+      flex: 0 0 40% !important;
+      max-width: 40% !important;
+      text-align: center !important;
+    }
+    
+    #hero .nadia { 
+      font-size: 1.4rem !important; 
+      line-height: 1.2 !important; 
+      margin: 0 0 0.2rem 0 !important;
+      word-wrap: break-word !important;
+    }
+    
+    #hero .cda { 
+      font-size: 0.9rem !important; 
+      line-height: 1.2 !important; 
+      margin: 0 0 0.3rem 0 !important;
+    }
+    
+    #hero .desc { 
+      font-size: 0.8rem !important; 
+      line-height: 1.3 !important; 
+      margin: 0 0 0.5rem 0 !important;
+      word-wrap: break-word !important;
+    }
+    
+    #hero .profile-picture.hero-photo { 
+      width: 100px !important; 
+      height: 100px !important; 
+      border: 2px solid #e1bee7 !important;
+    }
+    
+    #hero .qr-code-img { 
+      width: 40px !important; 
+      height: 40px !important; 
+    }
+    
+    #hero .propos {
+      font-size: 0.8rem !important;
+      padding: 0.3rem 1rem !important;
+      margin: 0.3rem 0 !important;
+    }
+  }
+  
+  /* Samsung Galaxy S8+ (360x740) */
+  @media (width: 360px) and (height: 740px) {
+    #hero .row {
+      flex-direction: column !important;
+      text-align: center !important;
+    }
+    
+    #hero .col-md-7, #hero .col-md-5 {
+      flex: 0 0 100% !important;
+      max-width: 100% !important;
+      text-align: center !important;
+    }
+    
+    #hero .nadia { font-size: 1.9rem !important; }
+    #hero .cda { font-size: 1.1rem !important; }
+    #hero .desc { font-size: 0.95rem !important; }
+    #hero .profile-picture.hero-photo { width: 190px !important; height: 190px !important; }
+    #hero .qr-code-img { width: 75px !important; height: 75px !important; }
+  }
+  
+  /* Samsung Galaxy S20 Ultra (412x915) */
+  @media (width: 412px) and (height: 915px) {
+    #hero .row {
+      flex-direction: column !important;
+      text-align: center !important;
+    }
+    
+    #hero .col-md-7, #hero .col-md-5 {
+      flex: 0 0 100% !important;
+      max-width: 100% !important;
+      text-align: center !important;
+    }
+    
+    #hero .nadia { font-size: 2.2rem !important; }
+    #hero .cda { font-size: 1.3rem !important; }
+    #hero .desc { font-size: 1.1rem !important; }
+    #hero .profile-picture.hero-photo { width: 220px !important; height: 220px !important; }
+    #hero .qr-code-img { width: 90px !important; height: 90px !important; }
+  }
+  
+  /* iPad Mini (768x1024) */
+  @media (width: 768px) and (height: 1024px) {
+    #hero .row {
+      flex-direction: row !important;
+      align-items: center !important;
+    }
+    
+    #hero .col-md-7 {
+      flex: 0 0 60% !important;
+      max-width: 60% !important;
+      text-align: left !important;
+    }
+    
+    #hero .col-md-5 {
+      flex: 0 0 40% !important;
+      max-width: 40% !important;
+      text-align: center !important;
+    }
+    
+    #hero .nadia { font-size: 2.5rem !important; }
+    #hero .cda { font-size: 1.5rem !important; }
+    #hero .desc { font-size: 1.2rem !important; }
+    #hero .profile-picture.hero-photo { width: 250px !important; height: 250px !important; }
+    #hero .qr-code-img { width: 100px !important; height: 100px !important; }
+  }
+  
+  /* iPad Air (820x1180) */
+  @media (width: 820px) and (height: 1180px) {
+    #hero .row {
+      flex-direction: row !important;
+      align-items: center !important;
+    }
+    
+    #hero .col-md-7 {
+      flex: 0 0 60% !important;
+      max-width: 60% !important;
+      text-align: left !important;
+    }
+    
+    #hero .col-md-5 {
+      flex: 0 0 40% !important;
+      max-width: 40% !important;
+      text-align: center !important;
+    }
+    
+    #hero .nadia { font-size: 2.7rem !important; }
+    #hero .cda { font-size: 1.6rem !important; }
+    #hero .desc { font-size: 1.3rem !important; }
+    #hero .profile-picture.hero-photo { width: 270px !important; height: 270px !important; }
+    #hero .qr-code-img { width: 110px !important; height: 110px !important; }
+  }
+  
+  /* iPad Pro (1024x1366) */
+  @media (width: 1024px) and (height: 1366px) {
+    #hero .row {
+      flex-direction: row !important;
+      align-items: center !important;
+    }
+    
+    #hero .col-md-7 {
+      flex: 0 0 65% !important;
+      max-width: 65% !important;
+      text-align: left !important;
+    }
+    
+    #hero .col-md-5 {
+      flex: 0 0 35% !important;
+      max-width: 35% !important;
+      text-align: center !important;
+    }
+    
+    #hero .nadia { font-size: 3rem !important; }
+    #hero .cda { font-size: 1.8rem !important; }
+    #hero .desc { font-size: 1.4rem !important; }
+    #hero .profile-picture.hero-photo { width: 300px !important; height: 300px !important; }
+    #hero .qr-code-img { width: 120px !important; height: 120px !important; }
+  }
+  
+  /* Surface Pro 7 (912x1368) */
+  @media (width: 912px) and (height: 1368px) {
+    #hero .row {
+      flex-direction: row !important;
+      align-items: center !important;
+    }
+    
+    #hero .col-md-7 {
+      flex: 0 0 65% !important;
+      max-width: 65% !important;
+      text-align: left !important;
+    }
+    
+    #hero .col-md-5 {
+      flex: 0 0 35% !important;
+      max-width: 35% !important;
+      text-align: center !important;
+    }
+    
+    #hero .nadia { font-size: 2.8rem !important; }
+    #hero .cda { font-size: 1.7rem !important; }
+    #hero .desc { font-size: 1.3rem !important; }
+    #hero .profile-picture.hero-photo { width: 280px !important; height: 280px !important; }
+    #hero .qr-code-img { width: 115px !important; height: 115px !important; }
+  }
+  
+  /* Galaxy Z Fold 5 (280x720) - Mode fermé */
+  @media (width: 280px) and (height: 720px) {
+    #hero .row {
+      flex-direction: column !important;
+      text-align: center !important;
+    }
+    
+    #hero .col-md-7, #hero .col-md-5 {
+      flex: 0 0 100% !important;
+      max-width: 100% !important;
+      text-align: center !important;
+    }
+    
+    #hero .nadia { font-size: 1.7rem !important; }
+    #hero .cda { font-size: 1rem !important; }
+    #hero .desc { font-size: 0.85rem !important; }
+    #hero .profile-picture.hero-photo { width: 170px !important; height: 170px !important; }
+    #hero .qr-code-img { width: 70px !important; height: 70px !important; }
+  }
+  
+  /* Galaxy Z Fold 5 (717x920) - Mode ouvert */
+  @media (width: 717px) and (height: 920px) {
+    #hero .row {
+      flex-direction: row !important;
+      align-items: center !important;
+    }
+    
+    #hero .col-md-7 {
+      flex: 0 0 60% !important;
+      max-width: 60% !important;
+      text-align: left !important;
+    }
+    
+    #hero .col-md-5 {
+      flex: 0 0 40% !important;
+      max-width: 40% !important;
+      text-align: center !important;
+    }
+    
+    #hero .nadia { font-size: 2.3rem !important; }
+    #hero .cda { font-size: 1.4rem !important; }
+    #hero .desc { font-size: 1.1rem !important; }
+    #hero .profile-picture.hero-photo { width: 240px !important; height: 240px !important; }
+    #hero .qr-code-img { width: 95px !important; height: 95px !important; }
+  }
+  
+  /* Asus Zenbook Fold (880x1100) */
+  @media (width: 880px) and (height: 1100px) {
+    #hero .row {
+      flex-direction: row !important;
+      align-items: center !important;
+    }
+    
+    #hero .col-md-7 {
+      flex: 0 0 65% !important;
+      max-width: 65% !important;
+      text-align: left !important;
+    }
+    
+    #hero .col-md-5 {
+      flex: 0 0 35% !important;
+      max-width: 35% !important;
+      text-align: center !important;
+    }
+    
+    #hero .nadia { font-size: 2.6rem !important; }
+    #hero .cda { font-size: 1.6rem !important; }
+    #hero .desc { font-size: 1.25rem !important; }
+    #hero .profile-picture.hero-photo { width: 260px !important; height: 260px !important; }
+    #hero .qr-code-img { width: 105px !important; height: 105px !important; }
+  }
+  
+  /* Samsung Galaxy A51/71 (412x915) */
+  @media (width: 412px) and (height: 915px) {
+    #hero .row {
+      flex-direction: column !important;
+      text-align: center !important;
+    }
+    
+    #hero .col-md-7, #hero .col-md-5 {
+      flex: 0 0 100% !important;
+      max-width: 100% !important;
+      text-align: center !important;
+    }
+    
+    #hero .nadia { font-size: 2.2rem !important; }
+    #hero .cda { font-size: 1.3rem !important; }
+    #hero .desc { font-size: 1.1rem !important; }
+    #hero .profile-picture.hero-photo { width: 220px !important; height: 220px !important; }
+    #hero .qr-code-img { width: 90px !important; height: 90px !important; }
+  }
+  
+  /* Nest Hub (1024x600) */
+  @media (width: 1024px) and (height: 600px) {
+    #hero .row {
+      flex-direction: row !important;
+      align-items: center !important;
+    }
+    
+    #hero .col-md-7 {
+      flex: 0 0 70% !important;
+      max-width: 70% !important;
+      text-align: left !important;
+    }
+    
+    #hero .col-md-5 {
+      flex: 0 0 30% !important;
+      max-width: 30% !important;
+      text-align: center !important;
+    }
+    
+    #hero .nadia { font-size: 2.2rem !important; }
+    #hero .cda { font-size: 1.3rem !important; }
+    #hero .desc { font-size: 1rem !important; }
+    #hero .profile-picture.hero-photo { width: 200px !important; height: 200px !important; }
+    #hero .qr-code-img { width: 80px !important; height: 80px !important; }
+  }
+  
+  /* Nest Hub Max (1280x800) */
+  @media (width: 1280px) and (height: 800px) {
+    #hero .row {
+      flex-direction: row !important;
+      align-items: center !important;
+    }
+    
+    #hero .col-md-7 {
+      flex: 0 0 70% !important;
+      max-width: 70% !important;
+      text-align: left !important;
+    }
+    
+    #hero .col-md-5 {
+      flex: 0 0 30% !important;
+      max-width: 30% !important;
+      text-align: center !important;
+    }
+    
+    #hero .nadia { font-size: 2.5rem !important; }
+    #hero .cda { font-size: 1.5rem !important; }
+    #hero .desc { font-size: 1.2rem !important; }
+    #hero .profile-picture.hero-photo { width: 220px !important; height: 220px !important; }
+    #hero .qr-code-img { width: 90px !important; height: 90px !important; }
+  }
+  
+  /* Styles responsive universels pour toutes les dimensions */
+  @media (max-width: 1200px) and (orientation: landscape) {
+    /* Forcer le centrage du contenu */
+    #hero .row {
+      justify-content: center !important;
+      align-items: center !important;
+    }
+    
+    /* Ajuster automatiquement selon la largeur */
+    #hero .col-md-7 {
+      flex: 0 0 calc(65% - 3vw) !important;
+      max-width: calc(65% - 3vw) !important;
+      text-align: left !important;
+    }
+    
+    #hero .col-md-5 {
+      flex: 0 0 calc(35% + 3vw) !important;
+      max-width: calc(35% + 3vw) !important;
+      text-align: center !important;
+    }
+
+    
+    /* Texte adaptatif */
+    #hero .nadia {
+      font-size: clamp(0.8rem, 2.5vw, 1.5rem) !important;
+      line-height: 1.2 !important;
+      margin: 0 0 0.2rem 0 !important;
+      word-wrap: break-word !important;
+      overflow-wrap: break-word !important;
+    }
+    
+    #hero .cda {
+      font-size: clamp(0.6rem, 2vw, 1.2rem) !important;
+      line-height: 1.2 !important;
+      margin: 0 0 0.3rem 0 !important;
+    }
+    
+    #hero .desc {
+      font-size: clamp(0.5rem, 1.8vw, 1rem) !important;
+      line-height: 1.3 !important;
+      margin: 0 0 0.5rem 0 !important;
+      word-wrap: break-word !important;
+    }
+    
+    /* Photo adaptative */
+    #hero .profile-picture.hero-photo {
+      width: clamp(50px, 15vw, 120px) !important;
+      height: clamp(50px, 15vw, 120px) !important;
+      border: clamp(1px, 0.3vw, 3px) solid #e1bee7 !important;
+    }
+    
+    /* QR code adaptatif */
+    #hero .qr-code {
+      margin-top: 0.3rem !important;
+      text-align: center !important;
+      display: flex !important;
+      justify-content: center !important;
+      align-items: center !important;
+      width: 100% !important;
+    }
+    
+    #hero .qr-code a {
+      display: flex !important;
+      justify-content: center !important;
+      align-items: center !important;
+      width: 100% !important;
+    }
+    
+    #hero .qr-code-img {
+      width: clamp(25px, 8vw, 60px) !important;
+      height: clamp(25px, 8vw, 60px) !important;
+    }
+    
+    /* Bouton adaptatif */
+    #hero .propos {
+      font-size: clamp(0.6rem, 2vw, 1rem) !important;
+      padding: clamp(0.2rem, 1vw, 0.5rem) clamp(0.8rem, 3vw, 1.5rem) !important;
+      margin: 0.3rem 0 !important;
+    }
+  }
+  
+  /* Styles pour très petits écrans */
+  @media (max-width: 800px) and (orientation: landscape) {
+    /* Forcer le centrage et éviter les chevauchements */
+    #hero .row {
+      justify-content: center !important;
+      align-items: center !important;
+      gap: 1rem !important;
+    }
+    
+    #hero .col-md-7 {
+      flex: 0 0 55% !important;
+      max-width: 55% !important;
+      text-align: left !important;
+    }
+    
+    #hero .col-md-5 {
+      flex: 0 0 45% !important;
+      max-width: 45% !important;
+      text-align: center !important;
+    }
+    
+    #hero .nadia {
+      font-size: clamp(0.7rem, 2vw, 1rem) !important;
+    }
+    
+    #hero .cda {
+      font-size: clamp(0.5rem, 1.5vw, 0.8rem) !important;
+    }
+    
+    #hero .desc {
+      font-size: clamp(0.4rem, 1.2vw, 0.7rem) !important;
+    }
+    
+    #hero .profile-picture.hero-photo {
+      width: clamp(40px, 12vw, 80px) !important;
+      height: clamp(40px, 12vw, 80px) !important;
+    }
+    
+    #hero .qr-code-img {
+      width: clamp(20px, 6vw, 40px) !important;
+      height: clamp(20px, 6vw, 40px) !important;
+    }
+    
+    /* Forcer le centrage du QR code */
+    #hero .qr-code {
+      display: flex !important;
+      justify-content: center !important;
+      align-items: center !important;
+      width: 100% !important;
+    }
+    
+    #hero .qr-code a {
+      display: flex !important;
+      justify-content: center !important;
+      align-items: center !important;
+      width: 100% !important;
+    }
   }
 }
